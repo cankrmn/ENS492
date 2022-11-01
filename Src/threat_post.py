@@ -56,10 +56,10 @@ def tokenizeThreatPost(url):
 
   body=""
   for div in new_soup.find_all('div', class_='c-article__content js-reading-content'):
-    for p in div.find_all('p')[:-1]:
+    for p in div.find_all(['p','h2'])[:-1]:
         body = body + (p.text)
-  #return body
-
+  return body
+'''''
   newsText = ""
 
   for txt in body:
@@ -70,7 +70,7 @@ def tokenizeThreatPost(url):
   sentence = removeStopWords(newsText)
   sentence = stemSentence(sentence)
   return sentence
-
+'''
   # return sentence.split(" ")
   # return tokenize([sentence])
 
@@ -88,7 +88,7 @@ def scrapeThreatPost(url):
   dic["date"] = date_string if len(date_string)!= "" else "No Date"   
 
   dic["stemmed text"] = tokenizeThreatPost(url)
-  #print(dic["stemmed text"])
+  #print(dic)
 
 
 scrapeThreatPost("https://threatpost.com/cisco-network-breach-google/180385/")

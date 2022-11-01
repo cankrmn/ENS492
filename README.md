@@ -5,15 +5,19 @@ for Win: ./Scripts/activate
 
 Crawled Websites
 
-Bengisu
+# Bengisu
 1. Ars Technica (not working)
 2. Threat Post
 3. BBC News
+4. The Hacker News
+5. Security Intelligence
 
-Can
+# Can
 1. Packet Storm
 
 
-İdil
+# İdil
+1. 
+2. 
 
-Kerem
+# Kerem

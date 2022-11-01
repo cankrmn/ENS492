@@ -49,15 +49,16 @@ def stemSentence(sentence):
     stem_sentence.append(" ")
   return "".join(stem_sentence)
 
-def tokenizeBBCNews(url):
+def tokenizeSecurityIntelligence(url):
   data = requests.get(url, headers = header).text
   new_soup = BeautifulSoup(data, "lxml")
   #body = new_soup.find_all("div", itemprop = "articleBody")
 
   body=""
-  for div in new_soup.find_all('div', class_='ssrcss-11r1m41-RichTextComponentWrapper ep2nwvo0')[1:]:
-    for p in div.find_all('p'):
-        body = body + (p.text)
+  for div in new_soup.find_all('main', class_='post__content'):
+    for p in div.find_all(['h2', 'p']):
+      if p.parent["class"][0] != "author__description":
+        body = body + (p.text) 
   return body
 '''''
   newsText = ""
@@ -75,20 +76,20 @@ def tokenizeBBCNews(url):
   # return tokenize([sentence])
 
 
-def scrapeBBCNews(url):
+def scrapeSecurityIntelligence(url):
   html_text = requests.get(url, headers = header).text
   soup = BeautifulSoup(html_text, "lxml")
 
   dic = {} 
-  dic["title"] = soup.find("h1", class_= "ssrcss-15xko80-StyledHeading e1fj1fc10").text
-  dic["first paragraph"] = soup.find("b", class_="ssrcss-hmf8ql-BoldText e5tfeyi3").text
+  dic["title"] = soup.find("p", class_= "breadcrumbs__page_title").text
+  dic["first paragraph"] = soup.find("main", class_="post__content").find('p').text
   dic["url"] = url
 
-  date_string = soup.find("span", class_="ssrcss-1if1g9v-MetadataText ecn1o5v1").find("time").get("datetime").split('T')[0]
-  dic["date"] = date_string if len(date_string)!= "" else "No Date"   
+  date_string = soup.find("span", class_="article__info__date").text.replace(',', '').replace(' ', '-')
+  dic["date"] = str(datetime.strptime(date_string, '%B-%d-%Y').date()) if len(date_string)!= "" else "No Date"   
 
-  dic["stemmed text"] = tokenizeBBCNews(url)
-  #print(dic["date"])
+  dic["stemmed text"] = tokenizeSecurityIntelligence(url)
+  #print(dic)
 
 
-scrapeBBCNews("https://www.bbc.com/news/uk-63328398")
+scrapeSecurityIntelligence("https://securityintelligence.com/articles/sec-business-data-breach/")

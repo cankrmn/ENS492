@@ -49,13 +49,13 @@ def stemSentence(sentence):
     stem_sentence.append(" ")
   return "".join(stem_sentence)
 
-def tokenizeBBCNews(url):
+def tokenizeTheHackerNews(url):
   data = requests.get(url, headers = header).text
   new_soup = BeautifulSoup(data, "lxml")
   #body = new_soup.find_all("div", itemprop = "articleBody")
 
   body=""
-  for div in new_soup.find_all('div', class_='ssrcss-11r1m41-RichTextComponentWrapper ep2nwvo0')[1:]:
+  for div in new_soup.find_all('div', id='articlebody'):
     for p in div.find_all('p'):
         body = body + (p.text)
   return body
@@ -75,20 +75,20 @@ def tokenizeBBCNews(url):
   # return tokenize([sentence])
 
 
-def scrapeBBCNews(url):
+def scrapeTheHackerNews(url):
   html_text = requests.get(url, headers = header).text
   soup = BeautifulSoup(html_text, "lxml")
 
   dic = {} 
-  dic["title"] = soup.find("h1", class_= "ssrcss-15xko80-StyledHeading e1fj1fc10").text
-  dic["first paragraph"] = soup.find("b", class_="ssrcss-hmf8ql-BoldText e5tfeyi3").text
+  dic["title"] = soup.find("h1", class_= "story-title").text
+  dic["first paragraph"] = soup.find('div', id='articlebody').find('p').text
   dic["url"] = url
 
-  date_string = soup.find("span", class_="ssrcss-1if1g9v-MetadataText ecn1o5v1").find("time").get("datetime").split('T')[0]
-  dic["date"] = date_string if len(date_string)!= "" else "No Date"   
+  date_string = soup.find("span", class_="author").text.replace(',', '').replace(' ', '-')
+  dic["date"] = str(datetime.strptime(date_string, '%B-%d-%Y').date()) if len(date_string)!= "" else "No Date"   
 
-  dic["stemmed text"] = tokenizeBBCNews(url)
+  dic["stemmed text"] = tokenizeTheHackerNews(url)
   #print(dic["date"])
 
 
-scrapeBBCNews("https://www.bbc.com/news/uk-63328398")
+scrapeTheHackerNews("https://thehackernews.com/2022/10/russian-hacker-arrested-in-india-for.html")
