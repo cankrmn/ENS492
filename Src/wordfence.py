@@ -8,14 +8,12 @@ from Utils.header import header
 from Utils.get_text import getText
 
 
-def scrapeVice(url):
+def scrapeWordfence(url):
     html_text = requests.get(url, headers=header).text
     soup = BeautifulSoup(html_text, "lxml")
     dic = {}
-    textContainer = soup.find("div",
-                              class_="article-body__content__17Yit paywall-article")
+    textContainer = soup.find("section", class_="blog-post-content")
     pArray = textContainer.find_all("p")
-    pArray.pop()
     rawText = " ".join(list(map(getText, pArray)))
     dic["raw text"] = rawText
     print(dic)
@@ -25,9 +23,9 @@ def scrapeVice(url):
 # will be deleted later
 jsonFile = open("../packet_storm.json", "r+")
 packet_storm = json.load(jsonFile)
-vice_news = packet_storm["Vice"]
-scrapeVice(
-    'https://www.vice.com/en/article/4axqed/cybercriminals-leak-la-school-data-after-it-refuses-to-ransom')
+wordfence_news = packet_storm["Wordfence"]
+scrapeWordfence(
+    'https://www.wordfence.com/blog/2022/08/ukrainian-website-threat-landscape-throughout-2022/')
 
 jsonFile.seek(0)
 # convert back to json.
