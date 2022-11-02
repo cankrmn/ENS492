@@ -2,7 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 
 from Utils.header import header 
-from Utils.getText import getText 
+from Utils.get_text import getText 
+from Utils.format_text import formatText
 
 
 def scrapeZDNet(url):
@@ -14,8 +15,6 @@ def scrapeZDNet(url):
    textContainer = soup.find("div", class_="c-ShortcodeContent")
    pArray = textContainer.find_all("p")
    rawText= " ".join(list(map(getText, pArray)))
-   dic["stemmed text"] = rawText
+   dic["raw text"] = rawText
+   dic["stemmed text"] = formatText(rawText)
    return dic
-
-
-scrapeZDNet("https://packetstormsecurity.com/news/view/33977/APAC-Faces-2.1M-Shortage-In-Cybersecurity-Professionals.html")

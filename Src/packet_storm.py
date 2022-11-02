@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
-import string
 import pandas as pd
 import json
-from Utils.getText import getText
+from Utils.get_text import getText
+from Utils.header import header
 
 # allTags = ['0 Day', 'Adobe', 'Afghanistan', 'Africa', 'Algeria', 'Amazon', 'Anonymous', 'Apache', 'Apple', 'Argentina', 'Australia', 'Backdoor', 'Bank', 'BlackBerry', 'Botnet', 'Brazil', 'Britain', 'BSD', 'Canada', 'Car', 'Caribbean', 'Censorship', 'China', 'CIA', 'Cisco', 'Commodore', 'Conference', 'Cookiejacking', 'Cryptography', 'CSRF', 'Cuba', 'Cybercrime', 'Cyberwar', 'Data Loss', 'Database', 'DMCA', 'DNS', 'DoS', 'eBay', 'Egypt', 'Email', 'Ethiopia', 'Facebook', 'FBI', 'Finland', 'Firefox', 'Flaw', 'France', 'Fraud', 'Gamble', 'Germany', 'Google', 'Google Chrome', 'Government', 'Greece', 'Hacker', 'Headline', 'IBM', 'Identity Theft', 'India', 'Indonesia', 'Intel', 'Iran', 'Iraq', 'Ireland', 'Israel', 'Italy', 'Japan', 'Java', 'Juniper', 'Kernel', 'Korea', 'Libya', 'Linux', 'Malaysia', 'Malware', 'McAfee', 'Mexico', 'Microsoft', 'Military', 'Motorola', 'Mozilla', 'MPAA', 'MySQL', 'Nasa', 'Netherlands', 'New Zealand', 'Nintendo', 'Nokia', 'Nortel', 'Norway', 'NSA', 'OpenBSD', 'Opera', 'Oracle', 'Pakistan', 'Passport', 'Password', 'Patch', 'PayPal', 'Philippines', 'Phish', 'Phone', 'Pirate', 'Portugal', 'Privacy', 'Religion', 'RFID', 'RIAA', 'Romania', 'RSA', 'Russia', 'Safari', 'Samsung', 'Saudi Arabia', 'Scada', 'Scam', 'Science', 'Scotland', 'Sega', 'Singapore', 'Site', 'Skype', 'Social', 'Sony', 'Space', 'Spain', 'Spam', 'Spyware', 'SSH', 'SSL', 'Survey', 'Sweden', 'Switzerland', 'Symantec', 'Syria', 'Taiwan', 'Terror', 'Thailand', 'Trojan', 'Turkey', 'Twitter', 'Uber', 'USA', 'Venezuela', 'VeriSign', 'Vietnam', 'Virus', 'VoIP', 'WebKit', 'Wireless', 'WordPress', 'Worm', 'XSS', 'Yahoo!', 'Yemen']
 
@@ -25,10 +25,6 @@ months = {
 def dateFormatter(dateStr):
    dateArr = dateStr.split(" ")
    return dateArr[1][:-1] + "/" +  months[dateArr[0]] + "/" + dateArr[2]
-
-header = {
-  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
-}
 
 packetStorm = {
    "title": "",

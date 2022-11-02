@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import json
 import pandas as pd
-# import nltk
+import nltk
 import string
 
 nltk.download('punkt')
@@ -69,18 +69,3 @@ def scrapeSCMag(url):
     dic["stemmed text"] = tokenizeSCMag(url)
     print(dic)
     return dic
-
-
-jsonFile = open("../packet_storm.json", "r+")
-packet_storm = json.load(jsonFile)
-scmag_news = packet_storm["SC Magazine"]
-#scrapeSCMag(
-#    'https://www.scmagazine.com/analysis/threat-intelligence/burgeoning-cranefly-hacking-group-has-a-new-intel-gathering-tool')
-for url in scmag_news:
-    scrapeSCMag(url)
-
-jsonFile.seek(0)
-# convert back to json.
-json.dump(packet_storm, jsonFile, indent=2)
-
-jsonFile.close()
