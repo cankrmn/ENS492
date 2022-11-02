@@ -6,15 +6,16 @@ import requests
 
 from Utils.header import header
 from Utils.get_text import getText
-from Utils.format_text import formatText
 
 
-def scrapeSCMag(url):
+def scrapeReuters(url):
     html_text = requests.get(url, headers=header).text
     soup = BeautifulSoup(html_text, "lxml")
     dic = {}
-    textContainer = soup.find("div", class_="GuttenbergBlockFactory_wrapper__RwaDA")
+    textContainer = soup.find("div",
+                              class_="article-body__content__17Yit paywall-article")
     pArray = textContainer.find_all("p")
+    pArray.pop()  # also need to remove first paragraph until "-"
     rawText = " ".join(list(map(getText, pArray)))
     dic["raw text"] = rawText
     print(dic)
@@ -24,10 +25,10 @@ def scrapeSCMag(url):
 # will be deleted later
 jsonFile = open("../packet_storm.json", "r+")
 packet_storm = json.load(jsonFile)
-scmag_news = packet_storm["SC Magazine"]
-scrapeSCMag(
-    'https://www.scmagazine.com/analysis/threat-intelligence/burgeoning-cranefly-hacking-group-has-a-new-intel-gathering-tool')
-# for url in scmag_news:
+reuters_news = packet_storm["Reuters"]
+scrapeReuters(
+    'https://www.reuters.com/business/retail-consumer/bed-bath-beyond-reviewing-possible-data-breach-2022-10-28/')
+# for url in reuters_news:
 #    scrapeReuters(url)
 
 jsonFile.seek(0)

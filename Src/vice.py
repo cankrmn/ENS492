@@ -6,15 +6,16 @@ import requests
 
 from Utils.header import header
 from Utils.get_text import getText
-from Utils.format_text import formatText
 
 
-def scrapeSCMag(url):
+def scrapeVice(url):
     html_text = requests.get(url, headers=header).text
     soup = BeautifulSoup(html_text, "lxml")
     dic = {}
-    textContainer = soup.find("div", class_="GuttenbergBlockFactory_wrapper__RwaDA")
+    textContainer = soup.find("div",
+                              class_="article__body-components")
     pArray = textContainer.find_all("p")
+    pArray.pop()
     rawText = " ".join(list(map(getText, pArray)))
     dic["raw text"] = rawText
     print(dic)
@@ -24,11 +25,9 @@ def scrapeSCMag(url):
 # will be deleted later
 jsonFile = open("../packet_storm.json", "r+")
 packet_storm = json.load(jsonFile)
-scmag_news = packet_storm["SC Magazine"]
-scrapeSCMag(
-    'https://www.scmagazine.com/analysis/threat-intelligence/burgeoning-cranefly-hacking-group-has-a-new-intel-gathering-tool')
-# for url in scmag_news:
-#    scrapeReuters(url)
+vice_news = packet_storm["VICE"]
+scrapeVice(
+    'https://www.vice.com/en/article/4axqed/cybercriminals-leak-la-school-data-after-it-refuses-to-ransom')
 
 jsonFile.seek(0)
 # convert back to json.
