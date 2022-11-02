@@ -9,7 +9,7 @@ header = {
 
 url1 = "https://gizmodo.com/china-mysterious-spaceplane-ejects-unknown-object-1849733129"
 
-def scrapeRegister(url):
+def scrapeGizmodo(url):
   html_text = requests.get(url, headers=header).text
   soup = BeautifulSoup(html_text, "lxml")
   dic = {}
