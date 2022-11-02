@@ -81,7 +81,7 @@ def scrapeThreatPost(url):
 
   dic = {} 
   dic["title"] = soup.find("h1", class_= "c-article__title").text
-  dic["first paragraph"] = soup.find("div", class_="c-article__intro").text
+  #dic["first paragraph"] = soup.find("div", class_="c-article__intro").text
   dic["url"] = url
 
   date_string = soup.find("div", class_="c-article__time").find("time").get("datetime").split('T')[0]

@@ -81,7 +81,7 @@ def scrapeTheHackerNews(url):
 
   dic = {} 
   dic["title"] = soup.find("h1", class_= "story-title").text
-  dic["first paragraph"] = soup.find('div', id='articlebody').find('p').text
+  #dic["first paragraph"] = soup.find('div', id='articlebody').find('p').text
   dic["url"] = url
 
   date_string = soup.find("span", class_="author").text.replace(',', '').replace(' ', '-')

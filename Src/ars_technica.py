@@ -83,7 +83,7 @@ def scrapeArsTechnica(url):
   #allNews = soup.find_all("li", class_ = "tease article")
   dic = {} 
   dic["title"] = soup.find("h1", itemprop= "headline").text
-  dic["first paragraph"] = soup.find("h2", itemprop="description").text
+  #dic["first paragraph"] = soup.find("h2", itemprop="description").text
   dic["url"] = url
 
   date_string = soup.find("time", class_="date").get("datetime").split('T')[0]

@@ -82,7 +82,7 @@ def scrapeSecurityIntelligence(url):
 
   dic = {} 
   dic["title"] = soup.find("p", class_= "breadcrumbs__page_title").text
-  dic["first paragraph"] = soup.find("main", class_="post__content").find('p').text
+  #dic["first paragraph"] = soup.find("main", class_="post__content").find('p').text
   dic["url"] = url
 
   date_string = soup.find("span", class_="article__info__date").text.replace(',', '').replace(' ', '-')
