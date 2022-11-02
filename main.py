@@ -11,13 +11,13 @@ from Src.zdNet import scrapeZDNet
 
 
 CRAWLERS = {
-   # "ars technica": {"crawler": scrapeArsTechnica, "key": "ars technica" },
-   # "BBC News UK": {"crawler": scrapeBBCNews, "key": "BBC News UK" },
-   # "SC Magazine": {"crawler": scrapeSCMag, "key": "SC Magazine" },
+   "ars technica": {"crawler": scrapeArsTechnica, "key": "ars technica" },
+   "BBC News UK": {"crawler": scrapeBBCNews, "key": "BBC News UK" },
+   "SC Magazine": {"crawler": scrapeSCMag, "key": "SC Magazine" },
    "Security Intelligence": {"crawler": scrapeSecurityIntelligence, "key": "Security Intelligence" },
-   # "The Hacker News": {"crawler": scrapeTheHackerNews, "key": "The Hacker News" },
-   # "Threatpost": {"crawler": scrapeThreatPost, "key": "Threatpost" },
-   # "ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet" },
+   "The Hacker News": {"crawler": scrapeTheHackerNews, "key": "The Hacker News" },
+   "Threatpost": {"crawler": scrapeThreatPost, "key": "Threatpost" },
+   "ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet" },
 }
 
 def getUrlIfNotParsed(newsInstance):
@@ -28,7 +28,8 @@ def getUrlIfNotParsed(newsInstance):
 
 
 def main():
-   df = pd.DataFrame()
+   df = pd.read_csv('parsed_news.csv')
+
 
    jsonFile = open("packet_storm.json", "r+")
    fileData = json.load(jsonFile)
@@ -44,17 +45,20 @@ def main():
          url = newsInstance["url"]
          dic = crawler(url)
 
+         tempNewsInstance = newsInstance.copy()
+         del tempNewsInstance["isParsed"]
 
 
-         df = df.append(dic, ignore_index=True)
 
-         # newsInstance["isParsed"] = True
-         
-   print(df)
-   # # Sets file's current position at offset.
-   # jsonFile.seek(0)
-   # # convert back to json.
-   # json.dump(fileData, jsonFile, indent = 2)
+         df = df.append({**dic, **tempNewsInstance}, ignore_index=True)
+         newsInstance["isParsed"] = True
+
+   df.to_csv("parsed_news.csv")
+
+   # Sets file's current position at offset.
+   jsonFile.seek(0)
+   # convert back to json.
+   json.dump(fileData, jsonFile, indent = 2)
 
    jsonFile.close()
       
