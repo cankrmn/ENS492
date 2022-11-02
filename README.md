@@ -17,7 +17,8 @@ Crawled Websites
 
 
 # İdil
-1. 
-2. 
+1. SC Magazine
+2. Reuters
+3. Vice
 
 # Kerem

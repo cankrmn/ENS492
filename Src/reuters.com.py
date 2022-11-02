@@ -50,36 +50,40 @@ def stemSentence(sentence):
     return "".join(stem_sentence)
 
 
-def tokenizeSCMag(url):
+def tokenizeReuters(url):
     data = requests.get(url, headers=header).text
     new_soup = BeautifulSoup(data, "lxml")
     body = ""
-    for div in new_soup.find_all("div", class_="GuttenbergBlockFactory_wrapper__RwaDA"):
+    for div in new_soup.find_all("div", class_="article-body__content__17Yit paywall-article"):
         for p in div.find_all('p'):
-            body = body + p.text
+            print(p.find_all("data-testid"))
+            # if "paragraph" is in :
+            # body = body + p.text
     return body
 
 
-def scrapeSCMag(url):
+def scrapeReuters(url):
     html_text = requests.get(url, headers=header).text
     soup = BeautifulSoup(html_text, "lxml")
     dic = {}
-    dic["title"] = soup.find("h1", class_="font-sans-semibold my-1 text-transform-unset fs-2 my-2").text
-    # dic["first paragraph"] = soup.find("div", class_="GuttenbergBlockFactory_wrapper__RwaDA").find("p").text
-    dic["raw text"] = tokenizeSCMag(url)
+    dic["title"] = soup.find("h1",
+                             class_="text__text__1FZLe text__dark-grey__3Ml43 text__medium__1kbOh text__heading_2__1K_hh heading__base__2T28j heading__heading_2__3Fcw5").text
+    # dic["first paragraph"] = soup.find("div", class_="article-body__content__17Yit paywall-article").find("p").text
+    dic["raw text"] = tokenizeReuters(url)
     dic["stemmed text"] = {}
+    print(dic)
     return dic
 
-# jsonFile = open("../packet_storm.json", "r+")
-# packet_storm = json.load(jsonFile)
-# scmag_news = packet_storm["SC Magazine"]
-# scrapeSCMag(
-#    'https://www.scmagazine.com/analysis/threat-intelligence/burgeoning-cranefly-hacking-group-has-a-new-intel-gathering-tool')
-# for url in scmag_news:
-#    scrapeSCMag(url)
 
-# jsonFile.seek(0)
+# edit json file
+jsonFile = open("../packet_storm.json", "r+")
+packet_storm = json.load(jsonFile)
+reuters_news = packet_storm["Reuters"]
+for url in reuters_news:
+    scrapeReuters(url)
+
+jsonFile.seek(0)
 # convert back to json.
-# json.dump(packet_storm, jsonFile, indent=2)
+json.dump(packet_storm, jsonFile, indent=2)
 
-# jsonFile.close()
+jsonFile.close()
