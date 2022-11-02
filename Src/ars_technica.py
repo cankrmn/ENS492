@@ -90,8 +90,8 @@ def scrapeArsTechnica(url):
   dic["date"] = date_string if len(date_string)!= "" else "No Date"   
 
   dic["stemmed text"] = tokenizeArsTechnica(url)
-  print(dic)
+  return dic
   #df = df.append(dic, ignore_index = True)
   #return df
 
-scrapeArsTechnica("https://arstechnica.com/science/2022/10/thawing-permafrost-exposes-old-pathogens-and-new-hosts/")
+# scrapeArsTechnica("https://arstechnica.com/science/2022/10/thawing-permafrost-exposes-old-pathogens-and-new-hosts/")
