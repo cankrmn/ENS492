@@ -1,6 +1,8 @@
 import json
 import pandas as pd
 
+from Utils.format_text import formatText
+
 from Src.ars_technica import scrapeArsTechnica
 from Src.bbc_news import scrapeBBCNews
 from Src.scmagazine import scrapeSCMag
@@ -20,13 +22,6 @@ CRAWLERS = {
    "ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet" },
 }
 
-def getUrlIfNotParsed(newsInstance):
-   if(newsInstance["isParsed"] == True): 
-      return
-   
-   return newsInstance["url"]
-
-
 def main():
    df = pd.read_csv('parsed_news.csv')
 
@@ -44,6 +39,7 @@ def main():
          
          url = newsInstance["url"]
          dic = crawler(url)
+         dic["stemmed text"] = formatText(dic["raw text"])
 
          tempNewsInstance = newsInstance.copy()
          del tempNewsInstance["isParsed"]
@@ -62,7 +58,4 @@ def main():
 
    jsonFile.close()
       
-
-
-
-print(main())
+main()
