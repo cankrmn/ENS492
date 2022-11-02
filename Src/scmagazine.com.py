@@ -65,21 +65,22 @@ def scrapeSCMag(url):
     soup = BeautifulSoup(html_text, "lxml")
     dic = {}
     dic["title"] = soup.find("h1", class_="font-sans-semibold my-1 text-transform-unset fs-2 my-2").text
-    # dic["first paragraph"] = soup.find("div", class_="GuttenbergBlockFactory_wrapper__RwaDA").find("p").text
-    dic["raw text"] = tokenizeSCMag(url)
-    dic["stemmed text"] = {}
+    dic["first paragraph"] = soup.find("div", class_="GuttenbergBlockFactory_wrapper__RwaDA").find("p").text
+    dic["stemmed text"] = tokenizeSCMag(url)
+    print(dic)
     return dic
 
-# jsonFile = open("../packet_storm.json", "r+")
-# packet_storm = json.load(jsonFile)
-# scmag_news = packet_storm["SC Magazine"]
-# scrapeSCMag(
+
+jsonFile = open("../packet_storm.json", "r+")
+packet_storm = json.load(jsonFile)
+scmag_news = packet_storm["SC Magazine"]
+#scrapeSCMag(
 #    'https://www.scmagazine.com/analysis/threat-intelligence/burgeoning-cranefly-hacking-group-has-a-new-intel-gathering-tool')
-# for url in scmag_news:
-#    scrapeSCMag(url)
+for url in scmag_news:
+    scrapeSCMag(url)
 
-# jsonFile.seek(0)
+jsonFile.seek(0)
 # convert back to json.
-# json.dump(packet_storm, jsonFile, indent=2)
+json.dump(packet_storm, jsonFile, indent=2)
 
-# jsonFile.close()
+jsonFile.close()
