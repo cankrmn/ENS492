@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import string
 import re
+from Utils.format_text import formatText
 
 header = {
   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
@@ -15,9 +16,9 @@ def scrapeGizmodo(url):
   dic = {}
   textContainer = soup.find("div", class_="xs32fe-0 hmTkUM js_post-content")
   pArray = textContainer.find_all("p")
-  rawText = getText(pArray, ['<span>(.*?)">', '<\/a><\/span>', '<p.*?">', '<\/p>,', '<.*?>'])
-  dic["raw text"] = rawText
-  #dic["stemmed text"] = formatText(rawText)
+  raw_text = getText(pArray, ['<span>(.*?)">', '<\/a><\/span>', '<p.*?">', '<\/p>,', '<.*?>'])
+  dic["raw text"] = raw_text
+  dic["stemmed text"] = formatText(raw_text)
   #print(dic["raw text"])
   return dic
 
