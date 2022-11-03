@@ -28,6 +28,13 @@ Crawled Websites
 
 # Kerem
 
+1. Gizmodo
+2. Guardian
+3. CNET
+4. CNN
+5. RealInfoSec
+6. TechCrunch
+
 to install requirements:
 
 - pip install -r requirements.txt
