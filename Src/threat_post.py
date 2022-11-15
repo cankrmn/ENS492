@@ -42,7 +42,7 @@ while True:
     click_counter += 1
   except NoSuchElementException:
     break
-
+driver.close()
 
 
 
