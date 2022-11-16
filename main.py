@@ -13,12 +13,12 @@ from Src.zdNet import scrapeZDNet
 
 
 CRAWLERS = {
-   "BBC News UK": {"crawler": scrapeBBCNews, "key": "BBC News UK" },
-   "SC Magazine": {"crawler": scrapeSCMag, "key": "SC Magazine" },
-   "Security Intelligence": {"crawler": scrapeSecurityIntelligence, "key": "Security Intelligence" },
+   #"BBC News UK": {"crawler": scrapeBBCNews, "key": "BBC News UK" },
+   #"SC Magazine": {"crawler": scrapeSCMag, "key": "SC Magazine" },
+   #"Security Intelligence": {"crawler": scrapeSecurityIntelligence, "key": "Security Intelligence" },
    "The Hacker News": {"crawler": scrapeTheHackerNews, "key": "The Hacker News" },
-   "Threatpost": {"crawler": scrapeThreatPost, "key": "Threatpost" },
-   "ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet" },
+   #"Threatpost": {"crawler": scrapeThreatPost, "key": "Threatpost" },
+   #"ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet" },
 }
 
 def main():
