@@ -8,11 +8,10 @@ Crawled Websites
 
 # Bengisu
 
-1. Ars Technica (not working)
-2. Threat Post
-3. BBC News
-4. The Hacker News
-5. Security Intelligence
+1. Threat Post
+2. BBC News
+3. The Hacker News
+4. Security Intelligence
 
 # Can
 
