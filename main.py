@@ -44,7 +44,7 @@ def main():
                 del tempNewsInstance["isParsed"]
 
                 df = df.append({**dic, **tempNewsInstance}, ignore_index=True)
-                newsInstance["isParsed"] = True
+                #newsInstance["isParsed"] = True
 
     df.to_csv("parsed_news.csv")
 
