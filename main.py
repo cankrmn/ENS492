@@ -13,7 +13,6 @@ from Src.zdNet import scrapeZDNet
 
 
 CRAWLERS = {
-   "ars technica": {"crawler": scrapeArsTechnica, "key": "ars technica" },
    "BBC News UK": {"crawler": scrapeBBCNews, "key": "BBC News UK" },
    "SC Magazine": {"crawler": scrapeSCMag, "key": "SC Magazine" },
    "Security Intelligence": {"crawler": scrapeSecurityIntelligence, "key": "Security Intelligence" },
