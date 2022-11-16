@@ -11388,7 +11388,7 @@
         "malware",
         "spyware"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33978/High-Severity-Vulnerability-In-GitHub-Was-Susceptible-To-Repo-Jacking.html": {
       "title": "High Severity Vulnerability In GitHub Was Susceptible To Repo Jacking",
@@ -11404,7 +11404,7 @@
         "microsoft",
         "flaw"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33975/Researchers-Uncover-Cryptojacking-Campaign-Targeting-Docker-Kubernetes-Cloud-Servers.html": {
       "title": "Researchers Uncover Cryptojacking Campaign Targeting Docker, Kubernetes Cloud Servers",
@@ -11420,7 +11420,7 @@
         "data loss",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33970/Senator-Pushes-Zuckerberg-On-How-Facebook-Collects-Health-Information.html": {
       "title": "Senator Pushes Zuckerberg On How Facebook Collects Health Information",
@@ -11437,7 +11437,7 @@
         "usa",
         "facebook"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33956/New-York-Fines-EyeMed-4.5-Million-For-2020-Email-Hack-Data-Breach.html": {
       "title": "New York Fines EyeMed $4.5 Million For 2020 Email Hack, Data Breach",
@@ -11455,7 +11455,7 @@
         "usa",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33948/Ransomware-Targets-Transportation-Sectors-In-Ukraine-Poland.html": {
       "title": "Ransomware Targets Transportation Sectors In Ukraine, Poland",
@@ -11471,7 +11471,7 @@
         "cyberwar",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33946/Army-Cloud-Plan-Keys-In-On-Creating-A-Zero-Trust-Architecture.html": {
       "title": "Army Cloud Plan Keys-In On Creating A Zero Trust Architecture",
@@ -11485,7 +11485,7 @@
         "headline",
         "military"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33945/Ransomware-Attack-Impacted-Some-CommonSpirit-Sites.html": {
       "title": "Ransomware Attack Impacted Some CommonSpirit Sites",
@@ -11501,7 +11501,7 @@
         "fraud",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33942/Samsung-Brings-Blockchain-Based-Security-To-Smart-Devices.html": {
       "title": "Samsung Brings Blockchain Based Security To Smart Devices",
@@ -11516,7 +11516,7 @@
         "cryptography",
         "samsung"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33939/Data-Of-380K-Patients-Compromised-In-Hack-Of-13-Anesthesia-Practices.html": {
       "title": "Data Of 380K Patients Compromised In Hack Of 13 Anesthesia Practices",
@@ -11532,7 +11532,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33931/Google-Makes-Major-Play-For-Cloud-Security-Market.html": {
       "title": "Google Makes Major Play For Cloud Security Market",
@@ -11546,7 +11546,7 @@
         "headline",
         "google"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33928/Meta-Uncovers-400-Malicious-Apps-On-Android-And-iOS.html": {
       "title": "Meta Uncovers 400 Malicious Apps On Android And iOS",
@@ -11567,7 +11567,7 @@
         "apple",
         "facebook"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33925/New-macOS-Vuln-Lets-Malicious-Apps-Bypass-Security-Checks.html": {
       "title": "New macOS Vuln Lets Malicious Apps Bypass Security Checks",
@@ -11583,7 +11583,7 @@
         "apple",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33920/Feds-Ink-26-Million-Contract-For-Deception-Platform-For-Defense.html": {
       "title": "Feds Ink $26 Million Contract For Deception Platform For Defense",
@@ -11600,7 +11600,7 @@
         "cyberwar",
         "military"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33902/Microsoft-Says-Fix-For-Two-Exchange-Zero-Days-On-Accelerated-Timeline.html": {
       "title": "Microsoft Says Fix For Two Exchange Zero Days On Accelerated Timeline",
@@ -11618,7 +11618,7 @@
         "data loss",
         "flaw"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33887/Akamai-Finds-13-Million-Malicious-Newly-Observed-Domains-A-Month.html": {
       "title": "Akamai Finds 13 Million Malicious Newly Observed Domains A Month",
@@ -11635,7 +11635,7 @@
         "cybercrime",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33881/National-Data-Privacy-Proposal-May-Shape-Health-Data-Not-Covered-By-HIPAA.html": {
       "title": "National Data Privacy Proposal May Shape Health Data Not Covered By HIPAA",
@@ -11651,7 +11651,7 @@
         "privacy",
         "usa"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33871/Insider-Threats-Play-A-Larger-Role-In-Security-Incidents.html": {
       "title": "Insider Threats Play A Larger Role In Security Incidents",
@@ -11667,7 +11667,7 @@
         "data loss",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33859/ChromeLoader-Can-Overload-Systems-With-Malware.html": {
       "title": "ChromeLoader Can Overload Systems With Malware",
@@ -11683,7 +11683,7 @@
         "chrome",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33857/Shareholders-File-Suit-Against-Twitter-Following-Former-CISOs-Warnings.html": {
       "title": "Shareholders File Suit Against Twitter Following Former CISO's Warnings",
@@ -11703,7 +11703,7 @@
         "spyware",
         "twitter"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33848/Vulnerability-Allows-Access-To-Credentials-In-Microsoft-Teams.html": {
       "title": "Vulnerability Allows Access To Credentials In Microsoft Teams",
@@ -11720,7 +11720,7 @@
         "flaw",
         "password"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33843/A-Quarter-Of-Cloud-Breaches-Caused-By-Unpatched-Vulnerabilities.html": {
       "title": "A Quarter Of Cloud Breaches Caused By Unpatched Vulnerabilities",
@@ -11736,7 +11736,7 @@
         "data loss",
         "flaw"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33840/FBI-Legacy-Medical-Devices-Pose-Risk-Of-Exploit-Patient-Safety-Impacts.html": {
       "title": "FBI: Legacy Medical Devices Pose Risk Of Exploit, Patient Safety Impacts",
@@ -11753,7 +11753,7 @@
         "flaw",
         "fbi"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33838/Mudge-Lack-Of-Access-Data-Controls-Invite-Twitter-Exploitation.html": {
       "title": "Mudge: Lack Of Access, Data Controls Invite Twitter Exploitation",
@@ -11769,7 +11769,7 @@
         "usa",
         "twitter"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33831/Lawsuit-After-KeyBank-Breach-Heralds-Changes-In-Liability.html": {
       "title": "Lawsuit After KeyBank Breach Heralds Changes In Liability",
@@ -11787,7 +11787,7 @@
         "data loss",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33828/Who-Owns-Digital-Health-Data-HIPPA-Privacy-Myths-May-Put-Women-At-Risk.html": {
       "title": "Who Owns Digital Health Data? HIPPA Privacy Myths May Put Women At Risk",
@@ -11801,7 +11801,7 @@
         "headline",
         "privacy"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33824/Effective-Access-Controls-Key-To-Employing-Zero-Trust-In-Healthcare.html": {
       "title": "Effective Access Controls Key To Employing Zero Trust In Healthcare",
@@ -11817,7 +11817,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33803/Concerns-Emerge-Over-Proposed-SEC-Cyber-Incident-Disclosure-Changes.html": {
       "title": "Concerns Emerge Over Proposed SEC Cyber Incident Disclosure Changes",
@@ -11835,7 +11835,7 @@
         "usa",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33802/Credential-Phishing-Attack-Targeted-16-000-Emails-At-Non-Profit-Agency.html": {
       "title": "Credential Phishing Attack Targeted 16,000 Emails At Non-Profit Agency",
@@ -11851,7 +11851,7 @@
         "password",
         "phish"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33800/How-Will-Meta-Treat-Personal-Data-After-High-Courts-Abortion-Ruling.html": {
       "title": "How Will Meta Treat Personal Data After High Court's Abortion Ruling?",
@@ -11869,7 +11869,7 @@
         "data loss",
         "facebook"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33795/DoD-Grants-Fund-Security-Research-For-Maritime-Industry.html": {
       "title": "DoD Grants Fund Security Research For Maritime Industry",
@@ -11885,7 +11885,7 @@
         "usa",
         "military"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33783/Have-3rd-Party-Hacking-Groups-Lost-Interest-In-The-Russia-Ukraine-Conflict.html": {
       "title": "Have 3rd Party Hacking Groups Lost Interest In The Russia Ukraine Conflict",
@@ -11903,7 +11903,7 @@
         "cyberwar",
         "military"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33757/Why-The-Pentagon-Remains-Both-The-Best-And-Worst-Customer-For-Tech-Innovators.html": {
       "title": "Why The Pentagon Remains Both The Best And Worst Customer For Tech Innovators",
@@ -11921,7 +11921,7 @@
         "science",
         "military"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33739/Lawmakers-Accuse-DHS-Watchdog-Of-Obstruction-In-Probe-Of-Secret-Service-Texts.html": {
       "title": "Lawmakers Accuse DHS Watchdog Of Obstruction In Probe Of Secret Service Texts",
@@ -11939,7 +11939,7 @@
         "data loss",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33729/FTC-Kicks-Off-Potentially-Massive-New-Regulation-On-Commercial-Surveillance.html": {
       "title": "FTC Kicks Off Potentially Massive New Regulation On Commercial Surveillance",
@@ -11955,7 +11955,7 @@
         "usa",
         "spyware"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33720/Stats-Say-Chinese-Researchers-Not-Deterred-By-Chinas-Vulnerability-Law.html": {
       "title": "Stats Say Chinese Researchers Not Deterred By China's Vulnerability Law",
@@ -11972,7 +11972,7 @@
         "china",
         "conference"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33703/Senator-Wants-To-Set-Aside-Millions-For-Small-Biz-Cybersecurity-Training.html": {
       "title": "Senator Wants To Set Aside Millions For Small Biz Cybersecurity Training",
@@ -11987,7 +11987,7 @@
         "government",
         "usa"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33695/Ransomware-Task-Force-Releases-SMB-Blueprint-For-Defense-And-Mitigation.html": {
       "title": "Ransomware Task Force Releases SMB Blueprint For Defense And Mitigation",
@@ -12004,7 +12004,7 @@
         "fraud",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33690/Lawsuit-Claims-Facebook-Scraping-Data-From-Hospital-Sites.html": {
       "title": "Lawsuit Claims Facebook Scraping Data From Hospital Sites",
@@ -12022,7 +12022,7 @@
         "facebook",
         "social"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33684/Founder-Of-Pro-Russian-Hacktivist-Killnet-Quitting-Group.html": {
       "title": "Founder Of Pro Russian Hacktivist Killnet Quitting Group",
@@ -12039,7 +12039,7 @@
         "russia",
         "cyberwar"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33680/Ransomware-Hit-The-American-Dental-Association.html": {
       "title": "Ransomware Hit The American Dental Association",
@@ -12056,7 +12056,7 @@
         "data loss",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33675/Microsoft-Exposes-Tactics-Of-European-Mercenary-Spyware-Broker.html": {
       "title": "Microsoft Exposes Tactics Of European Mercenary Spyware Broker",
@@ -12071,7 +12071,7 @@
         "microsoft",
         "spyware"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33674/Inside-The-Energy-Departments-10-Year-Plan-To-Reshape-Cybersecurity-In-The-Sector.html": {
       "title": "Inside The Energy Department's 10-Year Plan To Reshape Cybersecurity In The Sector",
@@ -12087,7 +12087,7 @@
         "usa",
         "flaw"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33662/Microsoft-Again-Reverses-Course-Will-Block-Macros-By-Default.html": {
       "title": "Microsoft Again Reverses Course, Will Block Macros By Default",
@@ -12103,7 +12103,7 @@
         "flaw",
         "patch"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33656/Authentication-Weakness-Responsible-For-80-Of-Financial-Breaches.html": {
       "title": "Authentication Weakness Responsible For 80% Of Financial Breaches",
@@ -12120,7 +12120,7 @@
         "bank",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33655/National-Data-Privacy-Law-Draws-Mixed-Reactions.html": {
       "title": "National Data Privacy Law Draws Mixed Reactions",
@@ -12136,7 +12136,7 @@
         "privacy",
         "usa"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33645/Industrial-Control-System-Password-Cracker-May-Be-Bad-Actually.html": {
       "title": "Industrial Control System Password Cracker May Be Bad, Actually",
@@ -12155,7 +12155,7 @@
         "backdoor",
         "scada"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33642/White-House-To-Hold-Summit-On-Addressing-The-Thousands-Of-Unfilled-Cybersecurity-Jobs.html": {
       "title": "White House To Hold Summit On Addressing The Thousands Of Unfilled Cybersecurity Jobs",
@@ -12170,7 +12170,7 @@
         "government",
         "usa"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33636/Tenet-Health-Sued-Over-Health-Data-Theft-Impacting-1.2M.html": {
       "title": "Tenet Health Sued Over Health Data Theft Impacting 1.2M",
@@ -12186,7 +12186,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33629/New-Spectre-Type-Retbleed-Vulnerability-Drops.-Will-Attackers-Use-It.html": {
       "title": "New Spectre-Type Retbleed Vulnerability Drops. Will Attackers Use It?",
@@ -12201,7 +12201,7 @@
         "flaw",
         "intel"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33619/Microsoft-Pauses-Once-Touted-Macro-Security-Change.html": {
       "title": "Microsoft Pauses Once Touted Macro Security Change",
@@ -12216,7 +12216,7 @@
         "microsoft",
         "flaw"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33598/Flagstar-Bank-Breach-Another-Example-Of-Hacker-Threat-To-Financial-Sector.html": {
       "title": "Flagstar Bank Breach Another Example Of Hacker Threat To Financial Sector",
@@ -12233,7 +12233,7 @@
         "bank",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33571/Questions-Over-Cyber-Command-Support-Operations-Raised-In-Defense-Authorization-Bill.html": {
       "title": "Questions Over Cyber Command Support, Operations Raised In Defense Authorization Bill",
@@ -12250,7 +12250,7 @@
         "cyberwar",
         "military"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33551/Since-2004-The-Average-American-Has-Had-At-Least-7-Data-Breaches.html": {
       "title": "Since 2004, The Average American Has Had At Least 7 Data Breaches",
@@ -12266,7 +12266,7 @@
         "usa",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33535/Data-For-2-Million-Patients-Stolen-In-Largest-Healthcare-Breach-So-Far-In-2022.html": {
       "title": "Data For 2 Million Patients Stolen In Largest Healthcare Breach So Far In 2022",
@@ -12282,7 +12282,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33522/FDA-Urges-Patch-Of-Illumina-Devices.html": {
       "title": "FDA Urges Patch Of Illumina Devices",
@@ -12299,7 +12299,7 @@
         "flaw",
         "patch"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33512/Industrial-IoT-Ransomware-Attacks-Control-Systems-Directly.html": {
       "title": "Industrial IoT Ransomware Attacks Control Systems Directly",
@@ -12316,7 +12316,7 @@
         "scada",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33504/Russia-Nixes-US-Charges-Against-REvil-As-Cooperation-Fizzles.html": {
       "title": "Russia Nixes US Charges Against REvil As Cooperation Fizzles",
@@ -12338,7 +12338,7 @@
         "cyberwar",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33490/Web-App-Attacks-On-The-Rise-In-Healthcare.html": {
       "title": "Web App Attacks On The Rise In Healthcare",
@@ -12354,7 +12354,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33484/Cyber-Feud-Between-Anonymous-And-Killnet-Unlikely-To-Affect-Others.html": {
       "title": "Cyber Feud Between Anonymous And Killnet Unlikely To Affect Others",
@@ -12371,7 +12371,7 @@
         "cyberwar",
         "anonymous"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33476/Strapi-Exposed-Data-Password-Reset-To-Unprivileged-Users.html": {
       "title": "Strapi Exposed Data, Password Reset To Unprivileged Users",
@@ -12387,7 +12387,7 @@
         "flaw",
         "password"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33414/New-Framework-Aims-To-Secure-Digital-Health-Apps-Not-Covered-By-HIPAA.html": {
       "title": "New Framework Aims To Secure Digital Health Apps Not Covered By HIPAA",
@@ -12401,7 +12401,7 @@
         "headline",
         "privacy"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33410/Avast-Patches-Decades-Old-Vulnerabilities-In-Antivirus-Product.html": {
       "title": "Avast Patches Decades Old Vulnerabilities In Antivirus Product",
@@ -12418,7 +12418,7 @@
         "flaw",
         "patch"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33397/Aruba-Avaya-Network-Switches-Vulnerable-To-SSL-Flaws.html": {
       "title": "Aruba, Avaya Network Switches Vulnerable To SSL Flaws",
@@ -12433,7 +12433,7 @@
         "flaw",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33384/Microsoft-Details-Rampant-Russian-Invasion-Cyber-Warfare.html": {
       "title": "Microsoft Details Rampant Russian Invasion Cyber Warfare",
@@ -12451,7 +12451,7 @@
         "cyberwar",
         "military"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33375/Breach-Update-Shows-2.6M-Individuals-Affected-By-Smile-Brands-Data-Theft.html": {
       "title": "Breach Update Shows 2.6M Individuals Affected By Smile Brands Data Theft",
@@ -12466,7 +12466,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33360/Bluetooth-Vulnerability-In-Smart-COVID-Test-Patched.html": {
       "title": "Bluetooth Vulnerability In Smart COVID Test Patched",
@@ -12483,7 +12483,7 @@
         "wireless",
         "flaw"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33351/REvil-Appears-To-Return-After-14-Of-Its-Members-Were-Arrested-In-January.html": {
       "title": "REvil Appears To Return After 14 Of Its Members Were Arrested In January",
@@ -12499,7 +12499,7 @@
         "cybercrime",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33320/Account-Takeover-Poised-To-Surpass-Malware-As-The-No.-1-Security-Concern.html": {
       "title": "Account Takeover Poised To Surpass Malware As The No. 1 Security Concern",
@@ -12515,7 +12515,7 @@
         "password",
         "identity theft"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33313/How-Identity-And-Access-Management-Fits-Into-Zero-Trust.html": {
       "title": "How Identity And Access Management Fits Into Zero Trust",
@@ -12528,7 +12528,7 @@
       "tags": [
         "headline"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33296/Identify-Fraud-Skyrockets-As-Hackers-Stick-To-Pre-Pandemic-Techniques.html": {
       "title": "Identify Fraud Skyrockets As Hackers Stick To Pre-Pandemic Techniques",
@@ -12544,7 +12544,7 @@
         "fraud",
         "identity theft"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33291/GitHub-Advanced-Security-Now-Scans-For-Secrets-With-Each-Push.html": {
       "title": "GitHub Advanced Security Now Scans For Secrets With Each Push",
@@ -12558,7 +12558,7 @@
         "headline",
         "password"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33265/Morgan-Stanley-Wealth-Management-Accounts-Breached-In-Vishing-Attack.html": {
       "title": "Morgan Stanley Wealth Management Accounts Breached In Vishing Attack",
@@ -12576,7 +12576,7 @@
         "fraud",
         "phish"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33228/Agencies-Aware-Of-Hacking-Threats-To-US-Allied-Satellite-Networks.html": {
       "title": "Agencies Aware Of Hacking Threats To US, Allied Satellite Networks",
@@ -12593,7 +12593,7 @@
         "russia",
         "cyberwar"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33219/RSA-Sells-Conference-To-Become-Standalone-Business.html": {
       "title": "RSA Sells Conference To Become Standalone Business",
@@ -12608,7 +12608,7 @@
         "conference",
         "rsa"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33218/Fraudsters-Use-Intelligent-Bots-To-Attack-Financial-Institutions.html": {
       "title": "Fraudsters Use Intelligent Bots To Attack Financial Institutions",
@@ -12626,7 +12626,7 @@
         "botnet",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33192/Chinese-APT-Zero-Days-Compromised-US-State-Governments.html": {
       "title": "Chinese APT Zero Days Compromised US State Governments",
@@ -12646,7 +12646,7 @@
         "cyberwar",
         "zero day"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33186/7-Vulnerabilities-Patched-In-Axeda-IIoT-Remote-Mgmt-Tool.html": {
       "title": "7 Vulnerabilities Patched In Axeda IIoT Remote Mgmt Tool",
@@ -12661,7 +12661,7 @@
         "flaw",
         "patch"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33174/MITRE-Launches-Engage-Deception-Framework.html": {
       "title": "MITRE Launches Engage Deception Framework",
@@ -12677,7 +12677,7 @@
         "usa",
         "cyberwar"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33166/Conti-Ransomware-Gang-Dismantles-Infrastructure-Amid-Ukraine-Row.html": {
       "title": "Conti Ransomware Gang Dismantles Infrastructure Amid Ukraine Row",
@@ -12692,7 +12692,7 @@
         "malware",
         "russia"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33164/Senate-Approves-Cyber-Incident-Reporting-Rule.html": {
       "title": "Senate Approves Cyber Incident Reporting Rule",
@@ -12709,7 +12709,7 @@
         "usa",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33135/Payment-Card-Skimming-Reemerges-With-An-Online-Twist.html": {
       "title": "Payment Card Skimming Reemerges With An Online Twist",
@@ -12725,7 +12725,7 @@
         "cybercrime",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33134/US-Financial-Industry-Uniquely-Susceptible-To-Supply-Chain-Threats.html": {
       "title": "US Financial Industry Uniquely Susceptible To Supply Chain Threats",
@@ -12739,7 +12739,7 @@
         "headline",
         "bank"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33111/Linux-Kernel-Patches-Remote-Stack-Overflow-Bug.html": {
       "title": "Linux Kernel Patches Remote Stack Overflow Bug",
@@ -12755,7 +12755,7 @@
         "flaw",
         "patch"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33091/Microsoft-Will-Block-Macros-By-Default-From-Internet-Downloads.html": {
       "title": "Microsoft Will Block Macros By Default From Internet Downloads",
@@ -12770,7 +12770,7 @@
         "malware",
         "microsoft"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33076/House-Passes-COMPETES-Act-For-Federal-Cyber-Programs.html": {
       "title": "House Passes COMPETES Act For Federal Cyber Programs",
@@ -12785,7 +12785,7 @@
         "government",
         "usa"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33069/Wormhole-Blockchain-Bridge-Taken-For-More-Than-300-Million.html": {
       "title": "Wormhole Blockchain Bridge Taken For More Than $300 Million",
@@ -12803,7 +12803,7 @@
         "fraud",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33057/Smart-Chain-Financial-Site-Qubit-Hacked-For-80-Million.html": {
       "title": "Smart-Chain Financial Site Qubit Hacked For $80 Million",
@@ -12819,7 +12819,7 @@
         "cybercrime",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33045/Kentucky-Hospital-Reports-Network-Outage-Care-Delays-Amid-Cyberattack.html": {
       "title": "Kentucky Hospital Reports Network Outage, Care Delays Amid Cyberattack",
@@ -12833,7 +12833,7 @@
         "headline",
         "denial of service"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33043/What-Enterprises-Should-Learn-From-Mercks-1.4-Billion-Insurance-Lawsuit.html": {
       "title": "What Enterprises Should Learn From Merck's $1.4 Billion Insurance Lawsuit",
@@ -12849,7 +12849,7 @@
         "government",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33042/New-York-Fines-EyeMed-600k-After-Data-Breach-Investigation-Finds-Security-Flaws.html": {
       "title": "New York Fines EyeMed $600k After Data Breach Investigation Finds Security Flaws",
@@ -12867,7 +12867,7 @@
         "usa",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33033/Russia-Makes-More-Arrests-But-Cybercrime-Harboring-Reputation-Hard-To-Shake.html": {
       "title": "Russia Makes More Arrests, But Cybercrime Harboring Reputation Hard To Shake",
@@ -12885,7 +12885,7 @@
         "russia",
         "cybercrime"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33007/10-Nations-Coordinate-Shutdown-Of-Ransomware-VPN-Service.html": {
       "title": "10 Nations Coordinate Shutdown Of Ransomware VPN Service",
@@ -12905,7 +12905,7 @@
         "germany",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/33000/BioPlus-Faces-Class-Action-Lawsuit-Over-Security-Measures.html": {
       "title": "BioPlus Faces Class-Action Lawsuit Over Security Measures",
@@ -12921,7 +12921,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32970/Warning-Log4j-Still-Lurks-Where-Dependency-Analysis-Cant-Find-It.html": {
       "title": "Warning: Log4j Still Lurks Where Dependency Analysis Can't Find It",
@@ -12938,7 +12938,7 @@
         "backdoor",
         "java"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32952/Chinese-Espionage-Group-Leveraged-Log4j-Bug-In-VMware.html": {
       "title": "Chinese Espionage Group Leveraged Log4j Bug In VMware",
@@ -12957,7 +12957,7 @@
         "cyberwar",
         "java"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32942/Log4j-Makes-Waves-In-The-US-Financial-Industry.html": {
       "title": "Log4j Makes Waves In The US Financial Industry",
@@ -12974,7 +12974,7 @@
         "flaw",
         "apache"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32933/Evil-Corp-Is-Dodging-Sanctions-By-Dressing-Up-As-REvil.html": {
       "title": "Evil Corp Is Dodging Sanctions By Dressing Up As REvil",
@@ -12991,7 +12991,7 @@
         "cybercrime",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32926/DHS-Moves-To-Make-Bug-Bounties-A-Permanent-Fixture.html": {
       "title": "DHS Moves To Make Bug Bounties A Permanent Fixture",
@@ -13008,7 +13008,7 @@
         "usa",
         "flaw"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32896/Deepfakes-Widen-Fraud-Opportunities-For-Financial-Hackers.html": {
       "title": "Deepfakes Widen Fraud Opportunities For Financial Hackers",
@@ -13025,7 +13025,7 @@
         "password",
         "science"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32890/RTF-Injection-Poised-For-More-Widespread-Adoption.html": {
       "title": "RTF Injection Poised For More Widespread Adoption",
@@ -13041,7 +13041,7 @@
         "malware",
         "flaw"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32888/Court-Allows-Microsoft-To-Dismantle-Infrastructure-Of-APT15.html": {
       "title": "Court Allows Microsoft To Dismantle Infrastructure Of APT15",
@@ -13061,7 +13061,7 @@
         "botnet",
         "cyberwar"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32876/Facebook-To-Mandate-High-Security-Program-For-Politicians-Journalists.html": {
       "title": "Facebook To Mandate High Security Program For Politicians, Journalists",
@@ -13079,7 +13079,7 @@
         "facebook",
         "social"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32856/Credentials-Exposed-For-Majority-Of-US-Financial-Firms.html": {
       "title": "Credentials Exposed For Majority Of US Financial Firms",
@@ -13097,7 +13097,7 @@
         "fraud",
         "password"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32852/Cybercriminals-Continue-Using-Zelle-To-Scam-Victims.html": {
       "title": "Cybercriminals Continue Using Zelle To Scam Victims",
@@ -13115,7 +13115,7 @@
         "fraud",
         "phish"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32816/Alan-Paller-Founder-Of-The-SANS-Institute-Passes-Away-At-76.html": {
       "title": "Alan Paller, Founder Of The SANS Institute, Passes Away At 76",
@@ -13128,7 +13128,7 @@
       "tags": [
         "headline"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32789/Senate-Panel-Passes-Slew-Of-Cybersecurity-Bills.html": {
       "title": "Senate Panel Passes Slew Of Cybersecurity Bills",
@@ -13143,7 +13143,7 @@
         "government",
         "usa"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32782/New-Federal-Order-Narrows-Agency-Patching-Focus-To-Known-Exploited-Vulnerabilities.html": {
       "title": "New Federal Order Narrows Agency Patching Focus To Known, Exploited Vulnerabilities",
@@ -13160,7 +13160,7 @@
         "flaw",
         "patch"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32760/As-Fewer-Victims-Pay-Ransoms-Conti-Gang-Looks-To-Sell-Victim-Data.html": {
       "title": "As Fewer Victims Pay Ransoms, Conti Gang Looks To Sell Victim Data",
@@ -13180,7 +13180,7 @@
         "fraud",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32759/BlackMatter-Botched-Millions-In-Ransoms-Due-To-Coding-Flaw.html": {
       "title": "BlackMatter Botched Millions In Ransoms Due To Coding Flaw",
@@ -13198,7 +13198,7 @@
         "flaw",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32754/Ransomware-Group-Targets-Financial-Firms-With-Phishing.html": {
       "title": "Ransomware Group Targets Financial Firms With Phishing",
@@ -13216,7 +13216,7 @@
         "password",
         "phish"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32747/Republicans-Want-The-Brakes-Pumped-On-Aviation-Cybersecurity.html": {
       "title": "Republicans Want The Brakes Pumped On Aviation Cybersecurity",
@@ -13231,7 +13231,7 @@
         "government",
         "usa"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32484/TSA-Announces-New-Pipeline-Security-Order.html": {
       "title": "TSA Announces New Pipeline Security Order",
@@ -13251,7 +13251,7 @@
         "cyberwar",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32454/Kroger-Reaches-5M-Settlement-With-Breach-Victims.html": {
       "title": "Kroger Reaches $5M Settlement With Breach Victims",
@@ -13308,7 +13308,7 @@
         "cybercrime",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32361/DHS-Chooses-Companies-To-Run-Civilian-Agency-Vulnerability-Disclosure-Programs.html": {
       "title": "DHS Chooses Companies To Run Civilian Agency Vulnerability Disclosure Programs",
@@ -13405,7 +13405,7 @@
         "headline",
         "conference"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32293/RevengeRAT-And-AysncRAT-Target-Aerospace-And-Travel-Sectors.html": {
       "title": "RevengeRAT And AysncRAT Target Aerospace And Travel Sectors",
@@ -13535,7 +13535,7 @@
         "hacker",
         "social"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32183/Hackers-Hit-9-Countries-Expose-623-036-Payment-Card-Records.html": {
       "title": "Hackers Hit 9 Countries, Expose 623,036 Payment Card Records",
@@ -13589,7 +13589,7 @@
         "iran",
         "science"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32149/Application-Security-Tactics-Are-Due-For-An-Overhaul.html": {
       "title": "Application Security Tactics Are Due For An Overhaul",
@@ -13619,7 +13619,7 @@
         "trojan",
         "apple"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32101/Legislators-Work-Towards-Breach-Law-Requiring-Notification.html": {
       "title": "Legislators Work Towards Breach Law Requiring Notification",
@@ -13764,7 +13764,7 @@
         "fraud",
         "cyberwar"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/32013/Researchers-Identify-223-Vulns-Used-In-Ransomware-Attacks.html": {
       "title": "Researchers Identify 223 Vulns Used In Ransomware Attacks",
@@ -13830,7 +13830,7 @@
         "terror",
         "backdoor"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31945/SolarWinds-Attack-Opened-Up-4-Paths-To-A-Microsoft-365-Cloud-Breach.html": {
       "title": "SolarWinds Attack Opened Up 4 Paths To A Microsoft 365 Cloud Breach",
@@ -13898,7 +13898,7 @@
         "government",
         "usa"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31852/Here-Are-The-Critical-Responses-Required-Of-All-Businesses-After-The-SolarWinds-Supply-Chain-Hack.html": {
       "title": "Here Are The Critical Responses Required Of All Businesses After The SolarWinds Supply-Chain Hack",
@@ -13918,7 +13918,7 @@
         "cyberwar",
         "backdoor"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31850/Spotify-Notifies-Customers-Of-Breach-Files-Under-CCPA.html": {
       "title": "Spotify Notifies Customers Of Breach, Files Under CCPA",
@@ -13985,7 +13985,7 @@
         "government",
         "usa"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31725/More-CISOs-Could-Be-Hit-By-Data-Regulations-With-New-California-Privacy-Law.html": {
       "title": "More CISOs Could Be Hit By Data Regulations With New California Privacy Law",
@@ -14002,7 +14002,7 @@
         "usa",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31721/Wroba-Mobile-Banking-Trojan-Targets-US-Smartphones.html": {
       "title": "Wroba Mobile Banking Trojan Targets US Smartphones",
@@ -14022,7 +14022,7 @@
         "russia",
         "google"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31717/Experians-GDPR-Fine-Leaves-Companies-Scrambling.html": {
       "title": "Experian's GDPR Fine Leaves Companies Scrambling",
@@ -14039,7 +14039,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31696/Treasury-Sanctions-Russian-Research-Institute-For-Triton-Attack.html": {
       "title": "Treasury Sanctions Russian Research Institute For Triton Attack",
@@ -14129,7 +14129,7 @@
         "backdoor",
         "new zealand"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31636/Zoom-Tries-To-Make-Good-On-Security-Privacy-Promises.html": {
       "title": "Zoom Tries To Make Good On Security, Privacy Promises",
@@ -14146,7 +14146,7 @@
         "phone",
         "flaw"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31626/New-Report-Suggests-That-Bug-Bounty-Business-Is-Recession-Proof.html": {
       "title": "New Report Suggests That Bug Bounty Business Is Recession-Proof",
@@ -14195,7 +14195,7 @@
         "data loss",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31586/FBI-Opens-China-Related-Counter-Intelligence-Case-Every-10-Hours.html": {
       "title": "FBI Opens China-Related Counter Intelligence Case Every 10 Hours",
@@ -14215,7 +14215,7 @@
         "cyberwar",
         "fbi"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31583/North-Korean-And-Russian-Cybercriminals-Are-Cooperating.html": {
       "title": "North Korean And Russian Cybercriminals Are Cooperating",
@@ -14235,7 +14235,7 @@
         "fraud",
         "korea"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31579/Accidental-Airbnb-Account-Takeover-Linked-To-Recycled-Phone-Numbers.html": {
       "title": "Accidental Airbnb Account Takeover Linked To Recycled Phone Numbers",
@@ -14270,7 +14270,7 @@
         "data loss",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31526/Trojan-Infects-NCR-Posing-Risk-To-Supply-Chain.html": {
       "title": "Trojan Infects NCR, Posing Risk To Supply Chain",
@@ -14302,7 +14302,7 @@
         "headline",
         "hacker"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31501/Fancy-Bear-Imposters-Extort-Finance-Retail-On-DDoS-Threat.html": {
       "title": "Fancy Bear Imposters Extort Finance, Retail On DDoS Threat",
@@ -14320,7 +14320,7 @@
         "fraud",
         "cyberwar"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31495/Companies-Left-Dangling-As-US-EU-Hash-Out-Data-Protection-Differences.html": {
       "title": "Companies Left Dangling As US, EU Hash Out Data Protection Differences",
@@ -14337,7 +14337,7 @@
         "usa",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31463/Arrested-Pen-Testers-Push-For-Good-Samaritan-Law.html": {
       "title": "Arrested Pen Testers Push For Good Samaritan Law",
@@ -14370,7 +14370,7 @@
         "data loss",
         "flaw"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31456/Operation-North-Star-Attackers-Appear-To-Be-Hidden-Cobra.html": {
       "title": "Operation North Star Attackers Appear To Be Hidden Cobra",
@@ -14439,7 +14439,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31434/Dave-ShinyHunters-Hack-Exposes-7.5-Million-User-Records.html": {
       "title": "Dave ShinyHunters Hack Exposes 7.5 Million User Records",
@@ -14456,7 +14456,7 @@
         "bank",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31423/New-Cryptominer-Botnet-Spreads-Payload-Less-Intrusive.html": {
       "title": "New Cryptominer Botnet Spreads Payload, Less Intrusive",
@@ -14473,7 +14473,7 @@
         "fraud",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31419/Justice-Charges-Chinese-Nationals-In-Hacking-Campaign.html": {
       "title": "Justice Charges Chinese Nationals In Hacking Campaign",
@@ -14492,7 +14492,7 @@
         "cyberwar",
         "spyware"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31407/EU-Court-Kills-Privacy-Shield-Wreaks-Havoc-On-Digital-Economy.html": {
       "title": "EU Court Kills Privacy Shield, Wreaks Havoc On Digital Economy",
@@ -14507,7 +14507,7 @@
         "government",
         "privacy"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31403/Docker-Attackers-Devise-Clever-Technique-To-Avoid-Detection.html": {
       "title": "Docker Attackers Devise Clever Technique To Avoid Detection",
@@ -14556,7 +14556,7 @@
         "fraud",
         "korea"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31358/MongoDB-Hacker-Threatens-To-Report-Breach-To-GDPR.html": {
       "title": "MongoDB Hacker Threatens To Report Breach To GDPR",
@@ -14574,7 +14574,7 @@
         "database",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31357/BMW-Customer-Database-For-Sale-On-Dark-Web.html": {
       "title": "BMW Customer Database For Sale On Dark Web",
@@ -14590,7 +14590,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31351/Xerox-Apparent-Victim-Of-Maze-Attack.html": {
       "title": "Xerox Apparent Victim Of Maze Attack",
@@ -14622,7 +14622,7 @@
         "malware",
         "cryptography"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31309/Zoom-Will-Extend-Optional-End-To-End-Encryption-To-Free-Users.html": {
       "title": "Zoom Will Extend Optional End-To-End Encryption To Free Users",
@@ -14655,7 +14655,7 @@
         "data loss",
         "password"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31295/Russian-Hacker-Releases-At-Least-14-000-Mexican-Taxpayer-IDs.html": {
       "title": "Russian Hacker Releases At Least 14,000 Mexican Taxpayer IDs",
@@ -14692,7 +14692,7 @@
         "nintendo",
         "password"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31268/San-Francisco-Benefits-Program-Breach-Exposes-PII-On-74-000.html": {
       "title": "San Francisco Benefits Program Breach Exposes PII On 74,000",
@@ -14743,7 +14743,7 @@
         "usa",
         "spyware"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31233/Nigerian-Scattered-Canary-Gang-Exploits-CARES-Act.html": {
       "title": "Nigerian Scattered Canary Gang Exploits CARES Act",
@@ -14796,7 +14796,7 @@
         "data loss",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31216/Whats-Lost-Gained-As-Black-Hat-And-DEF-CON-Go-Virtual.html": {
       "title": "What's Lost, Gained As Black Hat And DEF CON Go Virtual",
@@ -14812,7 +14812,7 @@
         "virus",
         "conference"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31198/MobiFriends-Data-For-3.6-Million-Users-Gets-Leaked.html": {
       "title": "MobiFriends Data For 3.6 Million Users Gets Leaked",
@@ -14828,7 +14828,7 @@
         "privacy",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31194/Favicons-Found-Housing-Credit-Card-Skimming-Malware.html": {
       "title": "Favicons Found Housing Credit Card Skimming Malware",
@@ -14914,7 +14914,7 @@
         "google",
         "apple"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31103/Google-Faces-New-Legal-Action-For-Violating-COPPA.html": {
       "title": "Google Faces New Legal Action For Violating COPPA",
@@ -14947,7 +14947,7 @@
         "phone",
         "spyware"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31093/14-Million-Key-Ring-Users-Exposed-In-Open-Database.html": {
       "title": "14 Million Key Ring Users Exposed In Open Database",
@@ -14980,7 +14980,7 @@
         "usa",
         "data loss"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31071/Best-Buy-Gift-Cards-USB-Drive-Used-To-Spread-Infostealer.html": {
       "title": "Best Buy Gift Cards, USB Drive Used To Spread Infostealer",
@@ -15012,7 +15012,7 @@
         "cybercrime",
         "fraud"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31057/COVID-19-Exposes-Gaps-In-Cybersecurity-Safety-Net-As-Millions-WFH.html": {
       "title": "COVID-19 Exposes Gaps In Cybersecurity Safety Net As Millions WFH",
@@ -15026,7 +15026,7 @@
         "headline",
         "virus"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31053/Mirai-Variant-Mukashi-Searching-Out-Zixel-NAS-Devices.html": {
       "title": "Mirai Variant Mukashi Searching Out Zixel NAS Devices",
@@ -15056,7 +15056,7 @@
         "russia",
         "cyberwar"
       ],
-      "isParsed": true
+      "isParsed": false
     },
     "https://packetstormsecurity.com/news/view/31047/Pwn2Own-Contest-Yields-13-Bugs-As-Virtual-Format-Expands-Talent-Pool.html": {
       "title": "Pwn2Own Contest Yields 13 Bugs, As Virtual Format Expands Talent Pool",
@@ -46352,17 +46352,6 @@
       "source": {
         "url": "https://coronavirus-realtime.com/",
         "label": "Coronavirus Realtime"
-      },
-      "tags": [
-        "headline",
-        "government",
-        "virus",
-        "science"
-      ],
-      "isParsed": false
-    }
-  }
-} Realtime"
       },
       "tags": [
         "headline",
