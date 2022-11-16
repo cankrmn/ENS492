@@ -12,12 +12,12 @@ from Src.threat_post import scrapeThreatPost
 from Src.zdNet import scrapeZDNet
 
 CRAWLERS = {
-    "BBC News UK": {"crawler": scrapeBBCNews, "key": "BBC News UK"},
+    #"BBC News UK": {"crawler": scrapeBBCNews, "key": "BBC News UK"},
     "SC Magazine": {"crawler": scrapeSCMag, "key": "SC Magazine"},
-    "Security Intelligence": {"crawler": scrapeSecurityIntelligence, "key": "Security Intelligence"},
-    "The Hacker News": {"crawler": scrapeTheHackerNews, "key": "The Hacker News"},
-    "Threatpost": {"crawler": scrapeThreatPost, "key": "Threatpost"},
-    "ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet"},
+    #"Security Intelligence": {"crawler": scrapeSecurityIntelligence, "key": "Security Intelligence"},
+    #"The Hacker News": {"crawler": scrapeTheHackerNews, "key": "The Hacker News"},
+    #"Threatpost": {"crawler": scrapeThreatPost, "key": "Threatpost"},
+    #"ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet"},
 }
 
 
