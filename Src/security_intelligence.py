@@ -66,5 +66,5 @@ def scrapeSecurityIntelligence(url):
   
   return dic
 
-getSearchResults()
+#getSearchResults()
 #scrapeSecurityIntelligence("https://securityintelligence.com/articles/sec-business-data-breach/")

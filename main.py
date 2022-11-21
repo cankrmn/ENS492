@@ -15,9 +15,9 @@ CRAWLERS = {
    #"BBC News UK": {"crawler": scrapeBBCNews, "key": "BBC News UK" },
    #"SC Magazine": {"crawler": scrapeSCMag, "key": "SC Magazine" },
    #"Security Intelligence": {"crawler": scrapeSecurityIntelligence, "key": "Security Intelligence" },
-   "The Hacker News": {"crawler": scrapeTheHackerNews, "key": "The Hacker News" },
+   #"The Hacker News": {"crawler": scrapeTheHackerNews, "key": "The Hacker News" },
    #"Threatpost": {"crawler": scrapeThreatPost, "key": "Threatpost" },
-   #"ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet" },
+   "ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet" },
 }
 
 

@@ -8,7 +8,7 @@ Crawled Websites
 
 # Bengisu
 
-1. Threat Post
+1. Threat Post (search included)
 2. BBC News
 3. The Hacker News
 4. Security Intelligence

@@ -69,7 +69,7 @@ def scrapeThreatPost(url):
       else: 
         body = body + (p.text)
   dic["raw text"] = body
-  print(dic)
+  #print(dic)
   return dic
 
 #getSearchResults()
