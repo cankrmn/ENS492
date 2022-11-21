@@ -1,3 +1,4 @@
+from datetime import datetime
 from modulefinder import packagePathMap
 from bs4 import BeautifulSoup
 import requests
@@ -63,7 +64,13 @@ def scrapeSecurityIntelligence(url):
         body = body + " " + (p.text) 
 
   dic["raw text"] = body
-  
+  dic["title"] = soup.find("p", class_= "breadcrumbs__page_title").text
+  dic["url"] = url
+
+  date_string = soup.find("span", class_="article__info__date").text.replace(',', '').replace(' ', '-')
+  dic["date"] = str(datetime.strptime(date_string, '%B-%d-%Y').strftime('%d/%m/%Y')) if len(date_string)!= "" else "No Date"   
+
+ 
   return dic
 
 #getSearchResults()

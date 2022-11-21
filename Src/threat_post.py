@@ -1,3 +1,4 @@
+from datetime import datetime
 from modulefinder import packagePathMap
 from bs4 import BeautifulSoup
 import requests
@@ -69,7 +70,12 @@ def scrapeThreatPost(url):
       else: 
         body = body + (p.text)
   dic["raw text"] = body
-  #print(dic)
+
+  dic["title"] = soup.find("h1", class_= "c-article__title").text
+  dic["url"] = url
+  date_string = soup.find("div", class_="c-article__time").find("time").attrs["datetime"].split('T')[0]
+  dic["date"] = str(datetime.strptime(date_string, '%Y-%m-%d').strftime('%d/%m/%Y')) if len(date_string)!= "" else "No Date"   
+
   return dic
 
 #getSearchResults()
