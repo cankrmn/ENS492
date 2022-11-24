@@ -8,6 +8,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import StaleElementReferenceException
+from selenium.common.exceptions import NoSuchWindowException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -21,11 +23,13 @@ header = {
 
 def getSearchResults():
   
-  queries1 = ['fraud', 'hacker groups', 'government', 'corporation',
+  queries = ['fraud', 'hacker groups', 'government', 'corporation',
        'darknet', 'cyber defense', 'hacking', 'security concepts',
        'security products', 'network security', 'cyberwar', 'geopolitical',
        'data breach', 'vulnerability', 'platform', 'cyber attack']
-  queries=['fraud']
+  queries1=['fraud']
+
+  dic= {}
   for query in queries:
 
     options = webdriver.ChromeOptions()
@@ -37,16 +41,13 @@ def getSearchResults():
     driver.get(url)
     time.sleep(5)
 
-    click_counter=0 
+    click_counter=0
     while True:
       soup = BeautifulSoup(driver.page_source, 'lxml')
-      for post in soup.find_all('div', {"class": "o-col-8@md o-col-4@lg c-card__col-title"}):
-        if(post.find('time').attrs["datetime"].split('-')[0]> "2017"):
-          #bunu printlemek yerine alttakini comment out et.
-          #scrapeThreatPost(post.find('a').get('href'))
-          print(post.find('a').get('href')+ " "+ post.find('time').attrs["datetime"].split('-')[0])
+      
+
       try:
-        if(click_counter > 4):
+        if(click_counter > 80):
           raise NoSuchElementException
         button = driver.find_element("xpath", '/html/body/div[2]/div[1]/div/div/div/div[1]/div[3]/button')
         driver.execute_script("arguments[0].click();", button)
@@ -54,8 +55,30 @@ def getSearchResults():
         click_counter += 1
       except NoSuchElementException:
         break
+      except StaleElementReferenceException:
+        break
+      except NoSuchWindowException:
+        break
+      for post in soup.find_all('article', {"class": "c-card c-card--horizontal--half@md c-card--horizontal@lg c-card--horizontal--flat@md js-post-item"}):
+        if(post.find('time').attrs["datetime"].split('-')[0]> "2017"):
+          #bunu printlemek yerine alttakini comment out et.
+          #scrapeThreatPost(post.find('a').get('href'))
+          #print(post.find('a').get('href')+ " "+ post.find('time').attrs["datetime"].split('-')[0])
+          
+          urlKey= post.find('a').get('href')
+
+          
+          if urlKey in dic and query not in dic[urlKey]:
+            dic[urlKey].append(query)
+          else:
+            dic[urlKey] = [query]
     driver.close()
 
+    json_object = json.dumps(dic, indent=4)
+ 
+    # Writing to sample.json
+    with open("threat_post.json", "w") as outfile:
+        outfile.write(json_object)
 
 def scrapeThreatPost(url):
   html_text = requests.get(url, headers = header).text
@@ -78,5 +101,5 @@ def scrapeThreatPost(url):
 
   return dic
 
-#getSearchResults()
+getSearchResults()
 #scrapeThreatPost('https://threatpost.com/squirrelwaffle-fraud-exchange-server-malspamming/178434/')

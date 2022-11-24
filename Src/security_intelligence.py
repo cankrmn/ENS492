@@ -7,20 +7,28 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import  StaleElementReferenceException
+from selenium.common.exceptions import NoSuchWindowException
 import time
+import json
+import pandas as pd
 
 
 header = {
   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
 }
+  
 
 def getSearchResults():
   
-  queries1 = ['fraud', 'hacker groups', 'government', 'corporation',
+  queries = ['fraud', 'hacker groups', 'government', 'corporation',
        'darknet', 'cyber defense', 'hacking', 'security concepts',
        'security products', 'network security', 'cyberwar', 'geopolitical',
        'data breach', 'vulnerability', 'platform', 'cyber attack']
-  queries=['fraud']
+  queries1=['fraud']
+
+  dic= {}
+
   for query in queries:
 
     options = webdriver.ChromeOptions()
@@ -32,22 +40,50 @@ def getSearchResults():
     driver.get(url)
     time.sleep(5)
 
+   
+    click_counter=0
     while True:
       soup = BeautifulSoup(driver.page_source, 'lxml')
-      for post in soup.find_all('article', {"class": "post post--list search__post"}):
-        
-          #bunu printlemek yerine alttakini comment out et.
-          #scrapeSecurityIntelligence(post.find('a', {"class": "search__excerpt"}).get('href'))
-          print(post.find('a', {"class": "search__excerpt"}).get('href'))
       try:
-        if(post.find('span', {"class": "post__date"}).text.split(',')[1] < "2017"):
+        if(click_counter > 20):
           raise NoSuchElementException
-        button = driver.find_element("xpath", '/html/body/div[2]/div/section/amp-list/amp-list-load-more[1]/button')
+        #button = driver.find_element("xpath", '/html/body/div[2]/div/section/amp-list/amp-list-load-more[1]/button')
+        button = driver.find_element("xpath", '/html/body/amp-list/amp-list-load-more[1]/button')
         driver.execute_script("arguments[0].click();", button)
         time.sleep(2)
+        click_counter+=1
+
       except NoSuchElementException:
         break
+      except StaleElementReferenceException:
+        break
+      except NoSuchWindowException:
+        break
+    
+    for post in soup.find_all('article', {"class": "post post--list search__post"}):
+      #bunu printlemek yerine alttakini comment out et.
+      #scrapeSecurityIntelligence(post.find('a', {"class": "search__excerpt"}).get('href'))
+      #if(post.find('span', {"class": "post__date"}).text.split(',')[1] > "2017"):
+      urlKey= post.find('a', {"class": "search__excerpt"}).get('href')
+     
+      if urlKey in dic and query not in dic[urlKey] and urlKey!="{{{permalink}}}":
+        dic[urlKey].append(query)
+      else:
+        dic[urlKey] = [query]
+  
+    for listPost in soup.find_all('article', {"class": "article article_grid"}):
+      #if(listPost.find('span', {"class": "article__date"}).text.split(',')[1] > "2017"):
+      listPostUrl = listPost.find('a', {"class": "article__content_link"}).get('href')
+      if listPostUrl in dic and query not in dic[urlKey] and listPostUrl!="{{{permalink}}}":
+        dic[listPostUrl].append(query)
+      else:
+        dic[listPostUrl] = [query]
     driver.close()
+
+    json_object = json.dumps(dic, indent=4)
+    # Writing to sample.json
+    with open("security_intelligence.json", "w") as outfile:
+        outfile.write(json_object)
 
 
 
@@ -73,5 +109,5 @@ def scrapeSecurityIntelligence(url):
  
   return dic
 
-#getSearchResults()
+getSearchResults()
 #scrapeSecurityIntelligence("https://securityintelligence.com/articles/sec-business-data-breach/")
