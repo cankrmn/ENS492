@@ -1,5 +1,0 @@
-beautifulSoup4
-requests
-pandas
-lxml
-nltk
