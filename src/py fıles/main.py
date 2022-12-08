@@ -10,14 +10,15 @@ labels = ['fraud', 'hacker groups', 'government', 'corporation',
 # label2id = {label:idx for idx, label in enumerate(labels)}
 
 def main():
-   datasets = load_file("/Users/cankrmn/Desktop/ENS 492 Bert venv/src/reduced_dataset[0,1000].csv", True)
+   datasets = load_file("Src/reduced_dataset[0,1000].csv", True)
    print(datasets)
    
    for label in labels:
       dataset = datasets[label]
       # print(dataset['train'].column_names)
-      encoded_dataset = dataset.map(lambda x : print("1", x), batched=True, remove_columns=dataset['train'].column_names)
-      print("2", encoded_dataset)
+      #encoded_dataset = dataset.map(lambda x : print("1", x), batched=True, remove_columns=dataset['train'].column_names)
+      #print("2", encoded_dataset)
+      print(dataset)
       break
       
 
