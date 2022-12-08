@@ -14,9 +14,21 @@ import json
 import pandas as pd
 
 
+
 header = {
   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
 }
+
+dic= {}
+def add_data(key, value):
+  # check if the key already exists in the dictionary
+  if key in dic:
+    # key already exists, update the tags list
+    print("Duplicate key:", key)
+  else:
+    # key does not exist, add the data to the dictionary
+    dic[key] = value
+    print("Data added:", key)
   
 
 def getSearchResults():
@@ -25,9 +37,7 @@ def getSearchResults():
        'darknet', 'cyber defense', 'hacking', 'security concepts',
        'security products', 'network security', 'cyberwar', 'geopolitical',
        'data breach', 'vulnerability', 'platform', 'cyber attack']
-  queries1=['fraud']
-
-  dic= {}
+  queries1 =['hacker groups']
 
   for query in queries:
 
@@ -45,9 +55,8 @@ def getSearchResults():
     while True:
       soup = BeautifulSoup(driver.page_source, 'lxml')
       try:
-        if(click_counter > 20):
+        if(click_counter > 1):
           raise NoSuchElementException
-        #button = driver.find_element("xpath", '/html/body/div[2]/div/section/amp-list/amp-list-load-more[1]/button')
         button = driver.find_element("xpath", '/html/body/amp-list/amp-list-load-more[1]/button')
         driver.execute_script("arguments[0].click();", button)
         time.sleep(2)
@@ -59,35 +68,24 @@ def getSearchResults():
         break
       except NoSuchWindowException:
         break
-    
+
     for post in soup.find_all('article', {"class": "post post--list search__post"}):
-      #bunu printlemek yerine alttakini comment out et.
-      #scrapeSecurityIntelligence(post.find('a', {"class": "search__excerpt"}).get('href'))
-      #if(post.find('span', {"class": "post__date"}).text.split(',')[1] > "2017"):
       urlKey= post.find('a', {"class": "search__excerpt"}).get('href')
-     
-      if urlKey in dic and query not in dic[urlKey] and urlKey!="{{{permalink}}}":
-        dic[urlKey].append(query)
-      else:
-        dic[urlKey] = [query]
-  
-    for listPost in soup.find_all('article', {"class": "article article_grid"}):
-      #if(listPost.find('span', {"class": "article__date"}).text.split(',')[1] > "2017"):
-      listPostUrl = listPost.find('a', {"class": "article__content_link"}).get('href')
-      if listPostUrl in dic and query not in dic[urlKey] and listPostUrl!="{{{permalink}}}":
-        dic[listPostUrl].append(query)
-      else:
-        dic[listPostUrl] = [query]
+      scrapeSecurityIntelligence(urlKey, query)
+
+    for listPost in soup.find_all('article', {"class": "article article_grid article__mobile--card"}):
+      listPostUrl = listPost.find('a',{"class": "article__content_link"}).get('href')
+      scrapeSecurityIntelligence("https://"+listPostUrl, query)
+      
     driver.close()
-
-    json_object = json.dumps(dic, indent=4)
-    # Writing to sample.json
-    with open("security_intelligence.json", "w") as outfile:
-        outfile.write(json_object)
+    print(query + " finished!")
+  
 
 
 
-def scrapeSecurityIntelligence(url):
+
+
+def scrapeSecurityIntelligence(url, query=""):
   html_text = requests.get(url, headers = header).text
   soup = BeautifulSoup(html_text, "lxml")
 
@@ -96,7 +94,7 @@ def scrapeSecurityIntelligence(url):
   body=""
   for div in soup.find_all('main', class_='post__content'):
     for p in div.find_all(['h2', 'p']):
-      if p.parent["class"][0] != "author__description":
+      if p.parent!= None and p.parent.class_ != "author__description":
         body = body + " " + (p.text) 
 
   dic["raw text"] = body
@@ -104,10 +102,19 @@ def scrapeSecurityIntelligence(url):
   dic["url"] = url
 
   date_string = soup.find("span", class_="article__info__date").text.replace(',', '').replace(' ', '-')
-  dic["date"] = str(datetime.strptime(date_string, '%B-%d-%Y').strftime('%d/%m/%Y')) if len(date_string)!= "" else "No Date"   
-
- 
-  return dic
+  dic["date"] = str(datetime.strptime(date_string, '%B-%d-%Y').strftime('%d/%m/%Y')) if len(date_string)!= "" else "No Date" 
+  dic["source"]= {"url": "https://securityintelligence.com/", "label":"Security Intelligence"}
+  if query != "":
+    dic["tags"]=[]
+    dic["tags"].append(query)
+  
+  add_data(url, dic)
 
 getSearchResults()
-#scrapeSecurityIntelligence("https://securityintelligence.com/articles/sec-business-data-breach/")
+# open a file in write mode
+with open("security_intelligence_search.json", "w") as file:
+  # write the dictionary to the file as JSON
+  json.dump(dic, file)
+
+
+#scrapeSecurityIntelligence("https://securityintelligence.com/news/ibm-z16-quantum-cyber-attacks/")
