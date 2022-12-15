@@ -19,29 +19,50 @@ header = {
   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
 }
 
-dic= {}
-def add_data(key, value):
-  # check if the key already exists in the dictionary
-  if key in dic:
-    # key already exists, update the tags list
-    print("Duplicate key:", key)
+#with open('security_intelligence_search.json', 'w') as f:
+  #json.dump({}, f)
+
+with open('security_intelligence_search.json', 'r') as f:
+  current_data = json.load(f)
+
+def urlExists(url,query):
+  print(url)
+  print(current_data.get(url))
+  if url in current_data:
+    print("Url already exists in the database.")
+    if query not in current_data[url]["tags"]:
+      current_data[url]["tags"].append(query)
+    return True
   else:
-    # key does not exist, add the data to the dictionary
-    dic[key] = value
-    print("Data added:", key)
-  
+    print("Url does not exist in the database.")
+    return False
+
+def add_data(key, value):
+  current_data[key] = value
+  print("Data added:", key)
+  # create some new data to append to the file
+  new_data = {
+      key: value
+  }
+  # update the current data with the new data
+  updated_data = {**current_data, **new_data}
+
+  # save the updated data to the JSON file
+  with open('security_intelligence_search.json', 'w') as f:
+    json.dump(updated_data, f)
 
 def getSearchResults():
   
-  queries = ['fraud', 'hacker groups', 'government', 'corporation',
+  queries1 = ['fraud', 'hacker groups', 'government', 'corporation',
        'darknet', 'cyber defense', 'hacking', 'security concepts',
        'security products', 'network security', 'cyberwar', 'geopolitical',
        'data breach', 'vulnerability', 'platform', 'cyber attack']
-  queries1 =['hacker groups']
+  queries =['fraud']
 
   for query in queries:
 
     options = webdriver.ChromeOptions()
+    options.add_argument('--disable-blink-features=AutomationControlled') #??
     options.add_argument("start-maximized")
     options.add_experimental_option("detach", True)
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=options)
@@ -55,7 +76,7 @@ def getSearchResults():
     while True:
       soup = BeautifulSoup(driver.page_source, 'lxml')
       try:
-        if(click_counter > 1):
+        if(click_counter > 0):
           raise NoSuchElementException
         button = driver.find_element("xpath", '/html/body/amp-list/amp-list-load-more[1]/button')
         driver.execute_script("arguments[0].click();", button)
@@ -71,26 +92,33 @@ def getSearchResults():
 
     for post in soup.find_all('article', {"class": "post post--list search__post"}):
       urlKey= post.find('a', {"class": "search__excerpt"}).get('href')
-      scrapeSecurityIntelligence(urlKey, query)
+      if(urlExists(urlKey,query)):
+        continue
+      else:
+        print("starting scraping")
+        scrapeSecurityIntelligence(urlKey, query)
 
-    for listPost in soup.find_all('article', {"class": "article article_grid article__mobile--card"}):
-      listPostUrl = listPost.find('a',{"class": "article__content_link"}).get('href')
-      scrapeSecurityIntelligence("https://"+listPostUrl, query)
-      
+    for listPost in soup.find_all('div', {"class": "article__text_container"}):
+      #listPostUrl = listPost.find('a').get('href')
+      listPostUrl = listPost.find('a',{"class":"article__content_link"}).get('href')
+      if listPostUrl != "{{{permalink}}}":
+        if(urlExists(listPostUrl,query)):
+          continue
+        else:
+          print("starting scraping")
+          scrapeSecurityIntelligence(listPostUrl, query)
+
     driver.close()
     print(query + " finished!")
   
 
-
-
-
-
 def scrapeSecurityIntelligence(url, query=""):
-  html_text = requests.get(url, headers = header).text
-  soup = BeautifulSoup(html_text, "lxml")
+  requests.packages.urllib3.disable_warnings()
+  html_text = requests.get(url, headers = header, verify=False).text
+  soup = BeautifulSoup(html_text, "lxml") 
 
   dic = {}  
-
+  isEvent = False
   body=""
   for div in soup.find_all('main', class_='post__content'):
     for p in div.find_all(['h2', 'p']):
@@ -98,23 +126,25 @@ def scrapeSecurityIntelligence(url, query=""):
         body = body + " " + (p.text) 
 
   dic["raw text"] = body
-  dic["title"] = soup.find("p", class_= "breadcrumbs__page_title").text
+  if(soup.find("p", class_= "breadcrumbs__page_title") != None):
+    dic["title"] = soup.find("p", class_= "breadcrumbs__page_title").text
+  else:
+    isEvent = True
+    dic["title"] = ""
   dic["url"] = url
 
-  date_string = soup.find("span", class_="article__info__date").text.replace(',', '').replace(' ', '-')
-  dic["date"] = str(datetime.strptime(date_string, '%B-%d-%Y').strftime('%d/%m/%Y')) if len(date_string)!= "" else "No Date" 
+  date_string = soup.find("span", class_="article__info__date")
+  if(date_string != None):
+    date_string = date_string.text.replace(',', '').replace(' ', '-')
+    dic["date"] = str(datetime.strptime(date_string, '%B-%d-%Y').strftime('%d/%m/%Y')) if len(date_string)!= "" else "No Date" 
+  else: 
+    dic["date"] = ""
   dic["source"]= {"url": "https://securityintelligence.com/", "label":"Security Intelligence"}
   if query != "":
     dic["tags"]=[]
     dic["tags"].append(query)
-  
-  add_data(url, dic)
+  if(isEvent == False):
+    add_data(url, dic)
 
 getSearchResults()
-# open a file in write mode
-with open("security_intelligence_search.json", "w") as file:
-  # write the dictionary to the file as JSON
-  json.dump(dic, file)
-
-
 #scrapeSecurityIntelligence("https://securityintelligence.com/news/ibm-z16-quantum-cyber-attacks/")
