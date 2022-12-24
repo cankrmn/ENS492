@@ -19,45 +19,53 @@ header = {
   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
 }
 
-#with open('security_intelligence_search.json', 'w') as f:
-  #json.dump({}, f)
+with open('security_intelligence_search.json', 'w') as f:
+  json.dump({}, f)
 
 with open('security_intelligence_search.json', 'r') as f:
   current_data = json.load(f)
 
 def urlExists(url,query):
-  print(url)
-  print(current_data.get(url))
   if url in current_data:
     print("Url already exists in the database.")
-    if query not in current_data[url]["tags"]:
-      current_data[url]["tags"].append(query)
+    #print(current_data[url]["tags"])
+    if current_data[url]["tags"].count(query)==0:
+      # Update the 'tags' field of the dictionary
+      current_data[url]['tags'].append(query)
+
+      # Open the JSON file in write mode
+      with open('security_intelligence_search.json', 'w') as f:
+        # Write the updated dictionary back to the file
+        json.dump(current_data, f)
+      
     return True
+
   else:
     print("Url does not exist in the database.")
     return False
 
-def add_data(key, value):
+def add_data(key, value,tagAppend=False):
   current_data[key] = value
   print("Data added:", key)
   # create some new data to append to the file
   new_data = {
-      key: value
+    key: value
   }
   # update the current data with the new data
   updated_data = {**current_data, **new_data}
-
   # save the updated data to the JSON file
   with open('security_intelligence_search.json', 'w') as f:
     json.dump(updated_data, f)
 
+  
+
 def getSearchResults():
   
-  queries1 = ['fraud', 'hacker groups', 'government', 'corporation',
+  queries = ['fraud', 'hacker groups', 'government', 'corporation',
        'darknet', 'cyber defense', 'hacking', 'security concepts',
        'security products', 'network security', 'cyberwar', 'geopolitical',
        'data breach', 'vulnerability', 'platform', 'cyber attack']
-  queries =['fraud']
+  queries1 =['government', 'hacker groups']
 
   for query in queries:
 
@@ -76,7 +84,7 @@ def getSearchResults():
     while True:
       soup = BeautifulSoup(driver.page_source, 'lxml')
       try:
-        if(click_counter > 0):
+        if(click_counter > 30):
           raise NoSuchElementException
         button = driver.find_element("xpath", '/html/body/amp-list/amp-list-load-more[1]/button')
         driver.execute_script("arguments[0].click();", button)
@@ -147,4 +155,10 @@ def scrapeSecurityIntelligence(url, query=""):
     add_data(url, dic)
 
 getSearchResults()
+
+with open('security_intelligence_search.json', 'r') as f:
+  data1 = json.load(f)
+  for key,value in data1.items():
+    if len(value["tags"])>1:
+      print(key, value["tags"])
 #scrapeSecurityIntelligence("https://securityintelligence.com/news/ibm-z16-quantum-cyber-attacks/")
