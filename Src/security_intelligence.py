@@ -61,11 +61,16 @@ def add_data(key, value,tagAppend=False):
 
 def getSearchResults():
   
-  queries = ['fraud', 'hacker groups', 'government', 'corporation',
+  queries1 = ['fraud', 'hacker groups', 'government', 'corporation',
        'darknet', 'cyber defense', 'hacking', 'security concepts',
        'security products', 'network security', 'cyberwar', 'geopolitical',
        'data breach', 'vulnerability', 'platform', 'cyber attack']
-  queries1 =['government', 'hacker groups']
+  queries =["fraud", "hacker groups", "government", "corporation", "dark net", "incident response", "cyber intelligence", "antivirus", 
+            "forensics", "pen testing", "cyber defense", "hacking", "white hat", "black hat", "stenography", "cryptography",
+            "cloud security", "firewall", "network security", "cyberwar", "usa", "russia", 
+            "ukraine", "cyberterrorism", "data breach", "security breach", "vulnerability", "cve", "XSS", "patch", "mobile", "IoT", "OS", "platform",
+            "cyber attack", "malware", "virus", "DDOS", "botnet", "phishing", "adware", "rootkit", "backdoor", "keylog", "trojan", 
+            "ransomware", "spyware"]
 
   for query in queries:
 
@@ -104,6 +109,8 @@ def getSearchResults():
         continue
       else:
         print("starting scraping")
+        if query == "dark net":
+            query = "darknet"
         scrapeSecurityIntelligence(urlKey, query)
 
     for listPost in soup.find_all('div', {"class": "article__text_container"}):
@@ -114,8 +121,9 @@ def getSearchResults():
           continue
         else:
           print("starting scraping")
+          if query == "dark net":
+            query = "darknet"
           scrapeSecurityIntelligence(listPostUrl, query)
-
     driver.close()
     print(query + " finished!")
   
@@ -158,7 +166,10 @@ getSearchResults()
 
 with open('security_intelligence_search.json', 'r') as f:
   data1 = json.load(f)
+  print(len(data1.items()))
+
   for key,value in data1.items():
     if len(value["tags"])>1:
       print(key, value["tags"])
+
 #scrapeSecurityIntelligence("https://securityintelligence.com/news/ibm-z16-quantum-cyber-attacks/")
