@@ -36,6 +36,7 @@ Crawled Websites
 6. TechCrunch (Crawler)
 7. ITGuru (Search / Crawler)
 8. Bleepingcomputer (Search)
+9. SCMAg (search/2)
 
 to install requirements:
 
