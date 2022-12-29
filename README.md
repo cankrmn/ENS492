@@ -8,7 +8,7 @@ Crawled Websites
 
 # Bengisu
 
-1. Threat Post
+1. Threat Post (Search / Crawler)
 2. BBC News
 3. The Hacker News
 4. Security Intelligence
@@ -20,19 +20,21 @@ Crawled Websites
 
 # İdil
 
-1. SC Magazine
+1. SC Magazine (Search / Crawler)
 2. Reuters
 3. Vice
 4. Wordfence
 
 # Kerem
 
-1. Gizmodo
-2. Guardian
-3. CNET
-4. CNN
-5. RealInfoSec
-6. TechCrunch
+1. Gizmodo (Search / Crawler)
+2. Guardian (Search / Crawler)
+3. CNET (Crawler)
+4. CNN (Crawler)
+5. RealInfoSec (Crawler)
+6. TechCrunch (Crawler)
+7. ITGuru (Search / Crawler)
+8. Bleepingcomputer (Search)
 
 to install requirements:
 
