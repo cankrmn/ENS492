@@ -24,6 +24,7 @@ Crawled Websites
 2. Reuters
 3. Vice
 4. Wordfence
+5. Bleepingcomputer (Search)
 
 # Kerem
 
