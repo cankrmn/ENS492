@@ -35,8 +35,8 @@ Crawled Websites
 5. RealInfoSec (Crawler)
 6. TechCrunch (Crawler)
 7. ITGuru (Search / Crawler)
-8. Bleepingcomputer (Search)
-9. SCMAg (search/2)
+8. Bleepingcomputer (Searchün bir kısmı)
+9. SCMAg (searchün bir kısmı)
 
 to install requirements:
 
