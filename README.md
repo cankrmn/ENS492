@@ -4,14 +4,14 @@ Telegram and Security News Website Group
 for Mac: source ./Scripts/activate
 for Win: ./Scripts/activate
 
-Crawled Websites
+Crawled Websites (Who did which crawler)
 
 # Bengisu
 
-1. Threat Post (search included)
+1. Threat Post (Search / Crawler)
 2. BBC News
-3. The Hacker News
-4. Security Intelligence
+3. The Hacker News 
+4. Security Intelligence (Search / Crawler)
 
 # Can
 
@@ -20,19 +20,22 @@ Crawled Websites
 
 # İdil
 
-1. SC Magazine
+1. SC Magazine (Search / Crawler)
 2. Reuters
 3. Vice
 4. Wordfence
+5. Bleepingcomputer (Crawler/ Search)
 
 # Kerem
 
-1. Gizmodo
-2. Guardian
-3. CNET
-4. CNN
-5. RealInfoSec
+1. Gizmodo (Search / Crawler)
+2. Guardian (Search / Crawler)
+3. CNET 
+4. CNN 
+5. RealInfoSec 
 6. TechCrunch
+7. ITGuru (Search / Crawler)
+8. Bleepingcomputer (Search)
 
 to install requirements:
 
