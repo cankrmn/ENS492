@@ -37,6 +37,8 @@ Crawled Websites (Who did which crawler)
 7. ITGuru (Search / Crawler)
 8. Bleepingcomputer (Search)
 
+Searchers for Gizmodo-ITGuru-BleepingComputer-SCMag-Guardian can be accesed from Src/ColabNoteboks/ENS492-NewsSiteSearches.ipynb
+
 to install requirements:
 
 - pip install -r requirements.txt
