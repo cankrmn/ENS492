@@ -14,13 +14,12 @@ def scrapeGizmodo(url):
   soup = BeautifulSoup(html_text, "lxml")
   dic = {}
   textContainer = soup.find("div", class_="xs32fe-0 iOFxrO js_post-content")
-  if (textContainer not None):
+  if (textContainer != None):
     pArray = textContainer.find_all("p")
-    print(pArray)
     raw_text = getText(pArray, ['<span>(.*?)">', '<\/a><\/span>', '<p.*?">', '<\/p>,', '<.*?>'])
     dic["raw text"] = raw_text
   #dic["stemmed text"] = formatText(rawText)
-  #print(dic["raw text"])
+  print(dic["raw text"])
   return dic
 
 def getText(text, regexList):
@@ -28,3 +27,6 @@ def getText(text, regexList):
   for regex in regexList:
     newText = re.sub(regex, '', str(newText))
   return newText
+
+#Uncomment the following line for testing crawler:
+#print(scrapeGizmodo(url1))

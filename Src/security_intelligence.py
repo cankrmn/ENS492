@@ -160,10 +160,10 @@ def scrapeSecurityIntelligence(url, query=""):
     dic["tags"]=[]
     dic["tags"].append(query)
   if(isEvent == False):
+    print(dic)
     add_data(url, dic)
 
-getSearchResults()
-
+'''''
 with open('security_intelligence_search.json', 'r') as f:
   data1 = json.load(f)
   print(len(data1.items()))
@@ -171,5 +171,15 @@ with open('security_intelligence_search.json', 'r') as f:
   for key,value in data1.items():
     if len(value["tags"])>1:
       print(key, value["tags"])
+'''''
 
+
+
+
+
+#Uncomment following line for testing scraper:
 #scrapeSecurityIntelligence("https://securityintelligence.com/news/ibm-z16-quantum-cyber-attacks/")
+
+#Uncomment following line for Search:
+#getSearchResults()
+

@@ -3,7 +3,7 @@ import requests
 import string
 import re
 import json
-from Utils.format_text import formatText
+#from Utils.format_text import formatText
 
 header = {
   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
@@ -23,7 +23,7 @@ def scrapeGuardian(url):
   #raw_text = getText(news_body, ['<p>', '<\/p>', '<a.*?a>'])
   raw_text = news_json['response']['content']['fields']['bodyText']
   dic["raw text"] = raw_text
-  dic["stemmed text"] = formatText(raw_text)
+  #dic["stemmed text"] = formatText(raw_text)
   #print(dic["raw text"])
   return dic
 
@@ -32,3 +32,6 @@ def getText(text, regexList):
   for regex in regexList:
     newText = re.sub(regex, '', str(newText))
   return newText
+
+#Uncomment the following line for testing crawler:
+#print(scrapeGuardian(url2))

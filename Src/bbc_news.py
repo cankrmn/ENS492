@@ -20,4 +20,5 @@ def scrapeBBCNews(url):
   dic["raw text"] = body
   return dic
 
-#scrapeBBCNews("https://www.bbc.com/news/uk-63328398")
+#Uncomment the following line for testing crawler:
+#print(scrapeBBCNews("https://www.bbc.com/news/uk-63328398"))

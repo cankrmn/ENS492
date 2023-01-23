@@ -136,15 +136,21 @@ def scrapeThreatPost(url, query=""):
   if query != "":
     dic["tags"]=[]
     dic["tags"].append(query)
+  print(dic)
   add_data(url, dic)
 
 
-getSearchResults()
-
+''''
 with open('threatpost_search.json', 'r') as f:
   data1 = json.load(f)
   for key,value in data1.items():
     if len(value["tags"])>1:
       print(key, value["tags"])
+'''''
 
+#Uncomment following lines to test the scraper:
 #scrapeThreatPost('https://threatpost.com/squirrelwaffle-fraud-exchange-server-malspamming/178434/')
+
+
+#Uncomment following line for Search:
+#getSearchResults()

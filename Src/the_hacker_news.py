@@ -24,4 +24,5 @@ def scrapeTheHackerNews(url):
   return dic
 
 
-#scrapeTheHackerNews("https://thehackernews.com/2022/10/russian-hacker-arrested-in-india-for.html")
+#Uncomment following line to test the scraper:
+#print(scrapeTheHackerNews("https://thehackernews.com/2022/10/russian-hacker-arrested-in-india-for.html"))
