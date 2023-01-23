@@ -20,16 +20,16 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 
 driver = webdriver.Chrome('chromedriver',options=chrome_options)
 
-def end_of_page_check(soup, min_year,news_content):
+def end_of_page_check(soup, min_year, news_content):
   if(soup.find("a", {"class": "peggds-2 ixaYpK next-button"})):
     return False
   else:
     date_year = re.search('datetime="(\d*?)-', str(news_content))
-    if(date_year!= None and int(date_year.group(1)) > min_year):
+    if(date_year != None and int(date_year.group(1)) > min_year):
      return False
     return True
 
-def search_gizmodo(keyword, min_year, max_page):#usage: search_gizmodo("hacking", 2019, 4)
+def search_gizmodo(keyword, min_year = 2020, max_page = 5):#usage: search_gizmodo("hacking", 2019, 4)
   end_of_page = False
   page_count = 1
   dic_list = []
@@ -45,7 +45,7 @@ def search_gizmodo(keyword, min_year, max_page):#usage: search_gizmodo("hacking"
     news_content = soup.find_all("div", {"class": "cw4lnv-5 aoiLP"}) #get all news in page
     print(news_content)
 
-    if(end_of_page_check(soup, min_year,news_content) or max_page <= page_count):#is this the last page to iterate
+    if(end_of_page_check(soup, min_year, news_content) or max_page <= page_count):#is this the last page to iterate
       end_of_page = True
 
     for news in news_content:#get urls from news
@@ -62,4 +62,5 @@ def search_gizmodo(keyword, min_year, max_page):#usage: search_gizmodo("hacking"
   #print("End, page count: " + str(page_count))
   return dic_list
 
+#Uncomment the following line for testing crawler:
 #print(search_gizmodo("fraud",2017,3))

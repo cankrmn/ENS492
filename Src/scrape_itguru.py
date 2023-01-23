@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import string
 import re
-#from Utils.format_text import formatText
 
 header = {
   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"

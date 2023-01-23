@@ -9,6 +9,12 @@ header = {
 
 url1 = "https://gizmodo.com/china-mysterious-spaceplane-ejects-unknown-object-1849733129"
 
+def getText(text, regexList):
+  newText = text
+  for regex in regexList:
+    newText = re.sub(regex, '', str(newText))
+  return newText
+
 def scrapeGizmodo(url):
   html_text = requests.get(url, headers=header).text
   soup = BeautifulSoup(html_text, "lxml")

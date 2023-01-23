@@ -3,13 +3,12 @@ import pandas as pd
 
 from Utils.format_text import formatText
 
-from Src.ars_technica import scrapeArsTechnica
-from Src.bbc_news import scrapeBBCNews
-from Src.scmagazine import scrapeSCMag
-from Src.security_intelligence import scrapeSecurityIntelligence
-from Src.the_hacker_news import scrapeTheHackerNews
-from Src.threat_post import scrapeThreatPost
-from Src.zdNet import scrapeZDNet
+from src.bbc_news import scrapeBBCNews
+from src.scmagazine import scrapeSCMag
+from src.security_intelligence import scrapeSecurityIntelligence
+from src.the_hacker_news import scrapeTheHackerNews
+from src.threat_post import scrapeThreatPost
+from src.zdNet import scrapeZDNet
 
 CRAWLERS = {
    #"BBC News UK": {"crawler": scrapeBBCNews, "key": "BBC News UK" },
@@ -17,7 +16,7 @@ CRAWLERS = {
    #"Security Intelligence": {"crawler": scrapeSecurityIntelligence, "key": "Security Intelligence" },
    #"The Hacker News": {"crawler": scrapeTheHackerNews, "key": "The Hacker News" },
    #"Threatpost": {"crawler": scrapeThreatPost, "key": "Threatpost" },
-   "ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet" },
+#    "ZDNet": {"crawler": scrapeZDNet, "key": "ZDNet" },
 }
 
 
