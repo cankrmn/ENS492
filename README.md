@@ -8,6 +8,8 @@ Crawled Websites
 
 # Bengisu
 
+LSTM ML Model
+
 1. Threat Post (Search / Crawler)
 2. BBC News (Crawler)
 3. The Hacker News (Crawler)
@@ -15,10 +17,14 @@ Crawled Websites
 
 # Can
 
+BERT ML Model
+
 1. Packet Storm
 2. ZDNet
 
 # İdil
+
+CNN ML Model
 
 1. SC Magazine (Search / Crawler)
 2. Reuters
@@ -27,6 +33,8 @@ Crawled Websites
 5. Bleepingcomputer (Crawler/ Search)
 
 # Kerem
+
+Obtaining telegram groups and channels from Lyzem.com
 
 1. Gizmodo (Search / Crawler)
 2. Guardian (Search / Crawler)
